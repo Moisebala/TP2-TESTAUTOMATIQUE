@@ -31,6 +31,6 @@ public class RetourVoitureSteps {
 
     @Then("A1 est disponible")
     public void thenA1EstDisponible() {
-        // PENDING
+        System.out.println(this.locations.toString());
     }
 }
