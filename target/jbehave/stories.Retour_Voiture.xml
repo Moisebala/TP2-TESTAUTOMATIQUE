@@ -1,0 +1,12 @@
+<story path="stories/Retour_Voiture.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">return a car</asA>
+  <iWantTo keyword="So that">I can change the car status to available</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Retour de voiture">
+<step outcome="successful">Given la voiture A1 est lou&#233;e &#224; Paul</step>
+<step outcome="successful">When Paul retourne la voiture A1</step>
+<step outcome="successful">Then A1 est disponible</step>
+</scenario>
+</story>

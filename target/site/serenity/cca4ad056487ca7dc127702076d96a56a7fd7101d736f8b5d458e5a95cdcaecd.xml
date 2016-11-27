@@ -1,0 +1,24 @@
+<acceptance-test-run title="Je veux afficher toutes les voitures, louées ou non" name="Je veux afficher toutes les voitures, louées ou non" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="77" timestamp="2016-11-24T19:31:34.061-05:00">
+  <user-story id="Afficher_voiture" name="Afficher voiture" path="stories/Afficher_voiture.story"/>
+  <tags>
+    <tag name="Afficher voiture" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="3">
+    <description>Given la voiture A1 est louée à Paul</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="10">
+    <description>And la voiture A2 est disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>When je demande l’affichage de la liste de toutes les voitures</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then la voiture A1 est indiquée comme louee a Paul</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>And la voiture A2 est indiquée comme étant disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>And la voiture A3 est indiquée comme étant disponible</description>
+  </test-step>
+</acceptance-test-run>

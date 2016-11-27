@@ -1,0 +1,15 @@
+<acceptance-test-run title="Je veux afficher les clients existant" name="Je veux afficher les clients existant" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11577" timestamp="2016-11-27T15:50:54.564-05:00">
+  <user-story id="affichage_client" name="Affichage client" path="stories/affichage_client.story"/>
+  <tags>
+    <tag name="Affichage client" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="17">
+    <description>Given il y a 2 clients enregistrés PAUL et JEAN</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="632">
+    <description>When je veux afficher la liste de nos clients</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="19">
+    <description>Then PAUL et JEAN sont afficher</description>
+  </test-step>
+</acceptance-test-run>

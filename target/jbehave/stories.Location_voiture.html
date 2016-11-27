@@ -1,0 +1,30 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/Location_voiture.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> rent a car</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I see the car as rent to a client</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Louer une voiture a un nouveau client</h2>
+<div class="step successful">Given la voiture A1 est disponible</div>
+<div class="step successful">And Paul est un nouveau client</div>
+<div class="step successful">When Paul s&eacute;lectionne la voiture A1</div>
+<div class="step successful">Then Paul est un client actif</div>
+<div class="step successful">And la voiture A1 est lou&eacute;e par Paul</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Louer une voiture a un ancien client</h2>
+<div class="step successful">Given la voiture A1 est disponible</div>
+<div class="step successful">And Paul est un ancien client</div>
+<div class="step successful">When Paul s&eacute;lectionne la voiture A1</div>
+<div class="step successful">Then la voiture A1 est lou&eacute;e par Paul</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Louer une voiture deja louees a un client</h2>
+<div class="step successful">Given la voiture A1 est d&eacute;j&agrave; lou&eacute;e &agrave; Jean</div>
+<div class="step successful">When Paul s&eacute;lectionne la voiture A1</div>
+<div class="step successful">Then la voiture A1 est lou&eacute;e par Jean</div>
+</div>
+</div>

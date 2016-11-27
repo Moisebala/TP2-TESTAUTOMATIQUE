@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Sun Nov 27 15:54:16 EST 2016
+threads=1
+total=7000
+threadAverage=7000
+stories/afficher_voiture.story=7000

@@ -1,0 +1,24 @@
+<acceptance-test-run title="Je veux afficher les voitures disponibles" name="Je veux afficher les voitures disponibles" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="66" timestamp="2016-11-24T19:31:33.992-05:00">
+  <user-story id="Afficher_voiture" name="Afficher voiture" path="stories/Afficher_voiture.story"/>
+  <tags>
+    <tag name="Afficher voiture" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="5">
+    <description>Given il y a 2 voitures disponibles</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="4">
+    <description>And la voiture A1 est disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>And la voiture A2 est disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>When je veux afficher la liste des voitures disponibles</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="4">
+    <description>Then la voiture A1 est indiquée comme étant disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="4">
+    <description>And la voiture A2 est indiquée comme étant disponible</description>
+  </test-step>
+</acceptance-test-run>

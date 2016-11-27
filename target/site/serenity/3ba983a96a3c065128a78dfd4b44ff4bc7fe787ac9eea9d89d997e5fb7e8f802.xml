@@ -1,0 +1,16 @@
+<acceptance-test-run title="Retour de voiture" name="Retour de voiture" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="39" timestamp="2016-11-24T19:31:33.942-05:00">
+  <user-story id="Retour_Voiture" name="Retour  voiture" path="stories/Retour_Voiture.story"/>
+  <tags>
+    <tag name="Retour  voiture" type="story"/>
+    <tag name="Retour voiture" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="3">
+    <description>Given la voiture A1 est louée à Paul</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>When Paul retourne la voiture A1</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then A1 est disponible</description>
+  </test-step>
+</acceptance-test-run>

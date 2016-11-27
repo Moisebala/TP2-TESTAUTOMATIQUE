@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Location voiture" skipped="0" tests="3" time="0.16" timestamp="2016-11-329 07:31:34"><testcase name="Louer une voiture a un nouveau client"/><testcase name="Louer une voiture a un ancien client"/><testcase name="Louer une voiture deja louees a un client"/></testsuite>

@@ -1,0 +1,27 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/afficher_voiture.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> display car</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can see available and rent cars</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Je veux afficher les voitures disponibles</h2>
+<div class="step successful">Given il y a 2 voitures disponibles</div>
+<div class="step successful">And la voiture A1 est disponible</div>
+<div class="step successful">And la voiture A2 est disponible</div>
+<div class="step successful">When je veux afficher la liste des voitures disponibles</div>
+<div class="step successful">Then la voiture A1 est indiqu&eacute;e comme &eacute;tant disponible</div>
+<div class="step successful">And la voiture A2 est indiqu&eacute;e comme &eacute;tant disponible</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Je veux afficher toutes les voitures, lou&eacute;es ou non</h2>
+<div class="step successful">Given la voiture A1 est lou&eacute;e &agrave; Paul</div>
+<div class="step successful">And la voiture A2 est disponible</div>
+<div class="step successful">When je demande l&rsquo;affichage de la liste de toutes les voitures</div>
+<div class="step successful">Then la voiture A1 est indiqu&eacute;e comme louee a Paul</div>
+<div class="step successful">And la voiture A2 est indiqu&eacute;e comme &eacute;tant disponible</div>
+<div class="step successful">And la voiture A3 est indiqu&eacute;e comme &eacute;tant disponible</div>
+</div>
+</div>

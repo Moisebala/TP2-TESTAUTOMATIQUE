@@ -1,0 +1,25 @@
+<story path="stories/Location_voiture.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">rent a car</asA>
+  <iWantTo keyword="So that">I see the car as rent to a client</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Louer une voiture a un nouveau client">
+<step outcome="successful">Given la voiture A1 est disponible</step>
+<step outcome="successful">And Paul est un nouveau client</step>
+<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="successful">Then Paul est un client actif</step>
+<step outcome="successful">And la voiture A1 est lou&#233;e par Paul</step>
+</scenario>
+<scenario keyword="Scenario:" title="Louer une voiture a un ancien client">
+<step outcome="successful">Given la voiture A1 est disponible</step>
+<step outcome="successful">And Paul est un ancien client</step>
+<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="successful">Then la voiture A1 est lou&#233;e par Paul</step>
+</scenario>
+<scenario keyword="Scenario:" title="Louer une voiture deja louees a un client">
+<step outcome="successful">Given la voiture A1 est d&#233;j&#224; lou&#233;e &#224; Jean</step>
+<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="successful">Then la voiture A1 est lou&#233;e par Jean</step>
+</scenario>
+</story>

@@ -1,0 +1,12 @@
+<story path="stories/affichage_client.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">user</inOrderTo>
+  <asA keyword="I want to">display my existing customer</asA>
+  <iWantTo keyword="So that">I can see all my customer display</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Je veux afficher les clients existant">
+<step outcome="successful">Given il y a 2 clients enregistr&#233;s PAUL et JEAN</step>
+<step outcome="successful">When je veux afficher la liste de nos clients</step>
+<step outcome="successful">Then PAUL et JEAN sont afficher</step>
+</scenario>
+</story>

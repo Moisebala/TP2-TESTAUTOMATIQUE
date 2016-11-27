@@ -1,0 +1,43 @@
+<xref>
+  <whenMade>1480280059761</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative>In order to 
+As a user
+I want to display car
+</narrative>
+      <name>afficher_voiture.story</name>
+      <path>stories/afficher_voiture.story</path>
+      <html>stories.afficher_voiture.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Je veux afficher les voitures disponibles
+Given il y a 2 voitures disponibles
+And la voiture A1 est disponible
+And la voiture A2 est disponible
+When je veux afficher la liste des voitures disponibles
+Then la voiture A1 est indiquée comme étant disponible
+And la voiture A2 est indiquée comme étant disponible
+
+
+Scenario:Je veux afficher toutes les voitures, louées ou non
+Given la voiture A1 est louée à Paul
+And la voiture A2 est disponible
+When je demande l’affichage de la liste de toutes les voitures
+Then la voiture A1 est indiquée comme louee a Paul
+And la voiture A2 est indiquée comme étant disponible
+And la voiture A3 est indiquée comme étant disponible
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1480280048399</started>
+      <duration>8049</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

@@ -1,0 +1,18 @@
+<acceptance-test-run title="Louer une voiture a un ancien client" name="Louer une voiture a un ancien client" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="48" timestamp="2016-11-24T19:31:34.252-05:00">
+  <user-story id="Location_voiture" name="Location voiture" path="stories/Location_voiture.story"/>
+  <tags>
+    <tag name="Location voiture" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="6">
+    <description>Given la voiture A1 est disponible</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>And Paul est un ancien client</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1">
+    <description>When Paul sélectionne la voiture A1</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then la voiture A1 est louée par Paul</description>
+  </test-step>
+</acceptance-test-run>

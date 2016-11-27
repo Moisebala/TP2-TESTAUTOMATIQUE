@@ -1,0 +1,22 @@
+{"xref": {
+  "whenMade": 1480280059761,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "In order to \nAs a user\nI want to display car\n",
+      "name": "afficher_voiture.story",
+      "path": "stories/afficher_voiture.story",
+      "html": "stories.afficher_voiture.html",
+      "meta": "",
+      "scenarios": "Scenario:Je veux afficher les voitures disponibles\nGiven il y a 2 voitures disponibles\nAnd la voiture A1 est disponible\nAnd la voiture A2 est disponible\nWhen je veux afficher la liste des voitures disponibles\nThen la voiture A1 est indiquée comme étant disponible\nAnd la voiture A2 est indiquée comme étant disponible\n\n\nScenario:Je veux afficher toutes les voitures, louées ou non\nGiven la voiture A1 est louée à Paul\nAnd la voiture A2 est disponible\nWhen je demande l’affichage de la liste de toutes les voitures\nThen la voiture A1 est indiquée comme louee a Paul\nAnd la voiture A2 est indiquée comme étant disponible\nAnd la voiture A3 est indiquée comme étant disponible\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1480280048399,
+      "duration": 8049
+    }
+  ],
+  "stepMatches": []
+}}
