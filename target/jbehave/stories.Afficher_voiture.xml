@@ -1,23 +1,37 @@
-<story path="stories/afficher_voiture.story" title="">
+<story path="stories/Afficher_Voiture.story" title="">
 <narrative keyword="Narrative:">
   <inOrderTo keyword="As a">user</inOrderTo>
   <asA keyword="I want to">display car</asA>
   <iWantTo keyword="So that">I can see available and rent cars</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Je veux afficher les voitures disponibles">
-<step outcome="successful">Given il y a 2 voitures disponibles</step>
-<step outcome="successful">And la voiture A1 est disponible</step>
-<step outcome="successful">And la voiture A2 est disponible</step>
-<step outcome="successful">When je veux afficher la liste des voitures disponibles</step>
-<step outcome="successful">Then la voiture A1 est indiqu&#233;e comme &#233;tant disponible</step>
-<step outcome="successful">And la voiture A2 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given il y a 2 voitures disponibles</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A1 est disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A2 est disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When je veux afficher la liste des voitures disponibles</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then la voiture A1 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A2 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</failure>
 </scenario>
 <scenario keyword="Scenario:" title="Je veux afficher toutes les voitures, lou&#233;es ou non">
-<step outcome="successful">Given la voiture A1 est lou&#233;e &#224; Paul</step>
-<step outcome="successful">And la voiture A2 est disponible</step>
-<step outcome="successful">When je demande l&#8217;affichage de la liste de toutes les voitures</step>
-<step outcome="successful">Then la voiture A1 est indiqu&#233;e comme louee a Paul</step>
-<step outcome="successful">And la voiture A2 est indiqu&#233;e comme &#233;tant disponible</step>
-<step outcome="successful">And la voiture A3 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given la voiture A1 est lou&#233;e &#224; Paul</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A2 est disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When je demande l&#8217;affichage de la liste de toutes les voitures</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then la voiture A1 est indiqu&#233;e comme louee a Paul</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A2 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A3 est indiqu&#233;e comme &#233;tant disponible</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</failure>
 </scenario>
 </story>

@@ -16,9 +16,9 @@ import java.util.List;
  * Created by Mo-is-Balla on 2016-11-16.
  */
 public class RetourVoitureSteps {
-    ConfigurableApplicationContext context;
-    LocationsRepository locationsRepository;
-    List<Locations> locations = null;
+    //ConfigurableApplicationContext context;
+    //LocationsRepository locationsRepository;
+    //List<Locations> locations = null;
     @Given("la voiture A1 est lou\u00E9e \u00E0 Paul")
     public void givenLaVoitureA1EstLouéeÀPaul() {
         // PENDING
@@ -26,11 +26,11 @@ public class RetourVoitureSteps {
 
     @When("Paul retourne la voiture A1")
     public void whenPaulRetourneLaVoitureA1(Long clientID) {
-        this.locations=locationsRepository.findByClientID(clientID);
+       // this.locations=locationsRepository.findByClientID(clientID);
     }
 
     @Then("A1 est disponible")
     public void thenA1EstDisponible() {
-        System.out.println(this.locations.toString());
+       // System.out.println(this.locations.toString());
     }
 }

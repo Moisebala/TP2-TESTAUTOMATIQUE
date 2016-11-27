@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1480280059761</whenMade>
+  <whenMade>1480289830473</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -8,35 +8,23 @@
       <description></description>
       <narrative>In order to 
 As a user
-I want to display car
+I want to display my existing customer
 </narrative>
-      <name>afficher_voiture.story</name>
-      <path>stories/afficher_voiture.story</path>
-      <html>stories.afficher_voiture.html</html>
+      <name>affichage_client.story</name>
+      <path>stories/affichage_client.story</path>
+      <html>stories.affichage_client.html</html>
       <meta></meta>
-      <scenarios>Scenario:Je veux afficher les voitures disponibles
-Given il y a 2 voitures disponibles
-And la voiture A1 est disponible
-And la voiture A2 est disponible
-When je veux afficher la liste des voitures disponibles
-Then la voiture A1 est indiquée comme étant disponible
-And la voiture A2 est indiquée comme étant disponible
-
-
-Scenario:Je veux afficher toutes les voitures, louées ou non
-Given la voiture A1 est louée à Paul
-And la voiture A2 est disponible
-When je demande l’affichage de la liste de toutes les voitures
-Then la voiture A1 est indiquée comme louee a Paul
-And la voiture A2 est indiquée comme étant disponible
-And la voiture A3 est indiquée comme étant disponible
+      <scenarios>Scenario:Je veux afficher les clients existant
+Given il y a 2 clients enregistrés PAUL et JEAN
+When je veux afficher la liste de nos clients
+Then PAUL et JEAN sont afficher
 
 
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1480280048399</started>
-      <duration>8049</duration>
+      <started>1480289819689</started>
+      <duration>7624</duration>
     </story>
   </stories>
   <stepMatches/>

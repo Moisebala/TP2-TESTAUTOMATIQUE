@@ -61,7 +61,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-11-2016 19:31</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2016 18:32</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -95,10 +95,10 @@
                     <tr>
                         <td colspan="2" class="test-title-bar">
                             <span class="outcome-icon"><img class="story-outcome-icon"
-                                                            src="images/success.png"/></span>
+                                                            src="images/cross.png"/></span>
                             <span class="test-case-title">
 
-                                <span class="success-color">Louer Une Voiture Deja Louees A Un Client
+                                <span class="error-color">Louer Une Voiture Deja Louees A Un Client
                                     <span class="related-issue-title"></span>
                             </span>
                         </span>
@@ -133,52 +133,152 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/cross.png" class="top-level-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="top-level-step">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.02s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <span class="error-message ellipsis"
+                                  title='Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationsRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!'><pre>Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationsRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</pre></span>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#stacktraceModal">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.jbehave.core.failures.BeforeOrAfterFailed :  Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationsRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                        </td>
+                    </tr>
+                <tr class="test-SKIPPED">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <img style="margin-left: 20px; margin-right: 5px;"
+                                 src="images/ignor.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="top-level-step">Given la voiture A1 est déjà louée à Jean</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
-                        <a name="1"/>
+                        <a name="2"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/ignor.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="top-level-step">When Paul sélectionne la voiture A1</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
-                        <a name="2"/>
+                        <a name="3"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/ignor.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="top-level-step">Then la voiture A1 est louée par Jean</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
+                    <td width="60" class="step-icon">
+                        <a name="4"/>
+                            <img style="margin-left: 20px; margin-right: 5px;"
+                                 src="images/cross.png" class="top-level-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="top-level-step">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <span class="error-message ellipsis"
+                                  title='Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException'><pre>Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</pre></span>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#stacktraceModal">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.jbehave.core.failures.BeforeOrAfterFailed :  Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                        </td>
+                    </tr>
+                <tr class="test-ERROR">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.05s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.79s</em></span></td>
                 </tr>
 
             </table>

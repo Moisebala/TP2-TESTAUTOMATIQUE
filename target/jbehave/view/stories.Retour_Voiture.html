@@ -16,9 +16,16 @@
 </div>
 <div class="scenario">
 <h2>Scenario: Retour de voiture</h2>
-<div class="step successful">Given la voiture A1 est lou&eacute;e &agrave; Paul</div>
-<div class="step successful">When Paul retourne la voiture A1</div>
-<div class="step successful">Then A1 est disponible</div>
+<div class="step failed">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp() <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationsRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</span></div>
+<div class="step notPerformed">Given la voiture A1 est lou&eacute;e &agrave; Paul <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When Paul retourne la voiture A1 <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then A1 est disponible <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step failed">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown() <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</span></div>
+<pre class="failure">org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</pre>
 </div>
 </div>
 

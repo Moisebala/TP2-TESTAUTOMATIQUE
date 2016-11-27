@@ -5,21 +5,42 @@
   <iWantTo keyword="So that">I see the car as rent to a client</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Louer une voiture a un nouveau client">
-<step outcome="successful">Given la voiture A1 est disponible</step>
-<step outcome="successful">And Paul est un nouveau client</step>
-<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
-<step outcome="successful">Then Paul est un client actif</step>
-<step outcome="successful">And la voiture A1 est lou&#233;e par Paul</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given la voiture A1 est disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Paul est un nouveau client</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Paul est un client actif</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And la voiture A1 est lou&#233;e par Paul</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</failure>
 </scenario>
 <scenario keyword="Scenario:" title="Louer une voiture a un ancien client">
-<step outcome="successful">Given la voiture A1 est disponible</step>
-<step outcome="successful">And Paul est un ancien client</step>
-<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
-<step outcome="successful">Then la voiture A1 est lou&#233;e par Paul</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given la voiture A1 est disponible</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And Paul est un ancien client</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then la voiture A1 est lou&#233;e par Paul</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</failure>
 </scenario>
 <scenario keyword="Scenario:" title="Louer une voiture deja louees a un client">
-<step outcome="successful">Given la voiture A1 est d&#233;j&#224; lou&#233;e &#224; Jean</step>
-<step outcome="successful">When Paul s&#233;lectionne la voiture A1</step>
-<step outcome="successful">Then la voiture A1 est lou&#233;e par Jean</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given la voiture A1 est d&#233;j&#224; lou&#233;e &#224; Jean</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When Paul s&#233;lectionne la voiture A1</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then la voiture A1 est lou&#233;e par Jean</step>
+<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
+<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
+	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
+	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+...</failure>
 </scenario>
 </story>

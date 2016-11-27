@@ -1,21 +1,33 @@
-<acceptance-test-run title="Louer une voiture a un nouveau client" name="Louer une voiture a un nouveau client" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="61" timestamp="2016-11-24T19:31:34.189-05:00">
+<acceptance-test-run title="Louer une voiture a un nouveau client" name="Louer une voiture a un nouveau client" steps="7" successful="0" failures="0" errors="2" skipped="5" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="673" timestamp="2016-11-27T18:32:16.246-05:00">
   <user-story id="Location_voiture" name="Location voiture" path="stories/Location_voiture.story"/>
   <tags>
     <tag name="Location voiture" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="3">
+  <test-step result="ERROR" duration="44">
+    <description>ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()</description>
+    <error>Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</error>
+    <exception>org.jbehave.core.failures.BeforeOrAfterFailed:Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!
+[]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="60">
     <description>Given la voiture A1 est disponible</description>
   </test-step>
-  <test-step result="SUCCESS" duration="3">
+  <test-step result="SKIPPED" duration="1">
     <description>And Paul est un nouveau client</description>
   </test-step>
-  <test-step result="SUCCESS" duration="5">
+  <test-step result="SKIPPED" duration="1">
     <description>When Paul sélectionne la voiture A1</description>
   </test-step>
-  <test-step result="SUCCESS" duration="2">
+  <test-step result="SKIPPED" duration="1">
     <description>Then Paul est un client actif</description>
   </test-step>
-  <test-step result="SUCCESS" duration="2">
+  <test-step result="SKIPPED" duration="1">
     <description>And la voiture A1 est louée par Paul</description>
+  </test-step>
+  <test-step result="ERROR" duration="1">
+    <description>ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()</description>
+    <error>Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</error>
+    <exception>org.jbehave.core.failures.BeforeOrAfterFailed:Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+[]</exception>
   </test-step>
 </acceptance-test-run>
