@@ -37,12 +37,16 @@ public class Client  {
 
     @Override
     public String toString() {
-        return String.format("Client[Permis=%s, firstName='%s', lastName='%s', phone ='%s' , adresse ='%s']", permisnumber, firstName, lastName,phone,adresse);
+        return String.format("Client[Permis=%s, firstName='%s', lastName='%s', phone ='%s' , adresse ='%s']", getPermisnumber(), firstName, lastName,phone,adresse);
     }
-    public String getPermisnumber(){ return permisnumber;}
-    public String setPermisnumber(String permis){ return  permisnumber;}
-    public Long getId(){ return  id;}
+
     //getters et setters
+    public String getPermisnumber(){ return permisnumber;}
+
+    public void setPermisnumber(String permit){  this.permisnumber = permit;}
+
+    public Long getId(){ return  id;}
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

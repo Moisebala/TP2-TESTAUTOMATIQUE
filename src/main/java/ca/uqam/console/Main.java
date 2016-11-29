@@ -28,7 +28,8 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-       // repository1.save(new Vehicule("789591","Mercedes","C220","Sedan","2016","120", Etatvoiture.Disponile));
+       //repository1.save(new Vehicule("789593","Pontiag","C220","Sedan","2016","120", Etatvoiture.Disponile));
+       // repository1.save(new Vehicule("788593","Toyota","C220","Sedan","2016","120", Etatvoiture.Disponile));
         help();
     }
 

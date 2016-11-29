@@ -30,11 +30,12 @@ public class App {
     static void help() {
         System.out.println("\n Faites votre choix : \n");
         System.out.println(
-                "1 : Affiche les voitures disponibles\n " +
+                        "1 : Affiche les voitures disponibles\n " +
                         "2 : Affiche les voitures louees \n " +
                         "3 : Louer une voiture \n " +
-                        "4 : Retourner une voiture \n " +
-                        "5 : Quitter\n ");
+                        "4 : Louer une voiture \n " +
+                        "5 : Retourner une voiture \n " +
+                        "6 : Quitter\n ");
         appChoice();
     }
     static void appChoice(){
@@ -50,12 +51,17 @@ public class App {
                 break;
             case 3:
                 louerVoiture();
+                appChoice();
                 break;
             case 4:
+                afficherClient();
+                appChoice();
+                break;
+            case 5:
                // retournerVoiture();
                 help();
                 break;
-            case 5:
+            case 6:
                 quitter();
                 break;
             default:
@@ -126,7 +132,9 @@ public class App {
         System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
         sc.nextLine();
         String numeroPermis = sc.nextLine();
+
         Client client = repository.findByPermisnumber(numeroPermis);
+        System.out.println(numeroPermis);
         //inscrire le client dans la base de donnees
         String numeroClient ;
         Client nouveauClient = new Client();
