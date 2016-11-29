@@ -55,5 +55,6 @@ public class Vehicule  {
     public  Long getId(){ return  id;}
 
     public Etatvoiture getState(){ return  state;}
+    public Etatvoiture setState(Etatvoiture  etat){ return  this.state;}
 }
 

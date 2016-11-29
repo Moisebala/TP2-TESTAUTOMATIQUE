@@ -111,14 +111,59 @@ public class App {
             System.out.println(voiture);
         }
     }
+    //methode pour louer une voiture
     static void louerVoiture(){
         long choiceUser;
         afficherVoituresDisponibles();
+        //recuperer le choix de l'utilisateur
         do{
             System.out.println("\n veuillez entrer votre choix : \n");
             choiceUser = sc.nextLong();
-        } while ((repository1.count() < choiceUser) || (choiceUser < 0));
+        } while (!(choiceUser>0&&choiceUser<=repository1.count()));
+        Vehicule voitures2 = repository1.findOne(choiceUser);
+        System.out.println("\n vous avez choisi : " +voitures2);
+        //entrer le numero de permis de conduire
+        System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
+        sc.nextLine();
+        String numeroPermis = sc.nextLine();
+        Client client = repository.findByPermisnumber(numeroPermis);
+        //inscrire le client dans la base de donnees
+        String numeroClient ;
+        Client nouveauClient = new Client();
+        if (client == null){
+            ajouterClient(nouveauClient,numeroPermis);
+            System.out.println("identite du client = " +nouveauClient.getId());
+            System.out.println("identite de la voiture = " +voitures2.getId());
+            repository2.save(new Locations(nouveauClient, voitures2));
 
+    } else {
+
+            //creer une ligne dans la table location
+            System.out.println("identite du client = " +client.getId());
+            System.out.println("identite de la voiture = " +voitures2.getId());
+            repository2.save(new Locations(client, voitures2));
+        }
+        //changer l etat de la voiture
+        voitures2.setState(Etatvoiture.Louer);
+        System.out.println("\n votre location a ete enregistree!! \n");
+        System.out.println("Souhaitez vous continuer? O ou N");
+        String reponse = sc.nextLine();
+        if(reponse.equals("O") || reponse.equals("o"))
+            help();
+        else {
+            System.out.println("Merci pour cette confiance renouvellee. Au plaisir de vous revoir!");
+            System.exit(0);
+        }
+
+    }
+    static void afficherlocation(){
+        //verification des locations
+        Iterable<Locations> locations = repository2.findAll();
+        System.out.println("Locations found:");
+        System.out.println("-------------------------------");
+        for (Locations location : locations){
+            System.out.println(location);
+        }
     }
 
     static void quitter () {
@@ -128,6 +173,31 @@ public class App {
             System.exit(0);}
         else{appChoice();}
 
+    }
+    static void ajouterClient(Client A ,String B){
+        String numeroClient;
+        System.out.println("\n IDENTIFICATION : \n");
+        System.out.println("Entrez votre prenom :\n");
+        String nomClient = sc.nextLine();
+
+        System.out.println("Entrez votre nom :\n");
+        String prenomClient = sc.nextLine();
+
+        do {
+            System.out.println("Entrez votre numero de telephone :\n");
+            //	sc.nextLine();
+            numeroClient = sc.nextLine();
+        } while (numeroClient.length() != 10);
+
+        System.out.println("Entrez votre addresse :\n");
+        String adresseClient = sc.nextLine();
+
+        A.setPermisnumber(B);
+        A.setFirstName(prenomClient);
+        A.setLastName(nomClient);
+        A.setPhone(numeroClient);
+        A.setAdresse(adresseClient);
+        repository.save(A);
     }
 }
 
