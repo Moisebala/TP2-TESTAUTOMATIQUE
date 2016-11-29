@@ -2,6 +2,7 @@ package ca.uqam.console;
 
 import ca.uqam.config.Config;
 import ca.uqam.model.Client;
+import ca.uqam.model.Etatvoiture;
 import ca.uqam.model.Locations;
 import ca.uqam.model.Vehicule;
 import ca.uqam.repositories.ClientRepository;
@@ -27,7 +28,7 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //repository1.save(new Vehicule("789599","Volkswagen","Passat","Sedan","2016","120","Yes"));
+       // repository1.save(new Vehicule("789591","Mercedes","C220","Sedan","2016","120", Etatvoiture.Disponile));
         help();
     }
 

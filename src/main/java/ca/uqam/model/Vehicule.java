@@ -14,36 +14,37 @@ public class Vehicule  {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(unique = true)
-    public String Matricule;
+    private String Matricule;
     @Column(name = "Marque")
-    public String Marque;
+    private String Marque;
     @Column(name = "Model")
-    public String Model;
+    private String Model;
     @Column(name = "Type")
-    public String Type;
+    private String Type;
     @Column(name = "Year")
-    public String Year;
+    private String Year;
     @Column(name = "Price_per_day")
-    public String price;
+    private String price;
     @Column(name = "State")
-    public String State;
+    @Enumerated(EnumType.STRING)
+    private Etatvoiture state;
     public Vehicule(){
 
         // Default constructor
     }
-    public Vehicule(String matricule, String marque, String model, String type, String year, String price, String state) {
+    public Vehicule(String matricule, String marque, String model, String type, String year, String price, Etatvoiture state) {
         this.Matricule = matricule;
         this.Marque = marque;
         this.Model = model;
         this.Type=type;
         this.Year= year;
         this.price=price;
-        this.State=state;
+        this.state=state;
 
     }
     @Override
     public String toString() {
-        return String.format("[%dL - Matricule=%s, Marque='%s', Model='%s', Type ='%s' , Year ='%s' ,prix ='%s',Etat ='%s']",id , getMatricule(), Marque, Model,Type,Year,price,State);
+        return String.format("[%dL - Matricule=%s, Marque='%s', Model='%s', Type ='%s' , Year ='%s' ,prix ='%s',Etat ='%s']",id , getMatricule(), Marque, Model,Type,Year,price,getState());
     }
     public String getMatricule() {
         return Matricule;
@@ -51,6 +52,8 @@ public class Vehicule  {
     public void setMatricule(String matricule) {
         Matricule = matricule;
     }
-    public  Long getID(){ return  id;}
+    public  Long getId(){ return  id;}
+
+    public Etatvoiture getState(){ return  state;}
 }
 

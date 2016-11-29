@@ -2,6 +2,7 @@ package ca.uqam.console;
 
 import ca.uqam.config.Config;
 import ca.uqam.model.Client;
+import ca.uqam.model.Etatvoiture;
 import ca.uqam.model.Locations;
 import ca.uqam.model.Vehicule;
 import ca.uqam.repositories.ClientRepository;
@@ -40,11 +41,11 @@ public class App {
         int choiceMenu = sc.nextInt();
         switch (choiceMenu) {
             case 1:
-                //afficherVoituresDisponibles();
+                afficherVoituresDisponibles();
                 appChoice();
                 break;
             case 2:
-               // afficherVoituresLouees();
+               afficherVoituresLouees();
                 appChoice();
                 break;
             case 3:
@@ -75,6 +76,32 @@ public class App {
         }
 
     }
+    //afficher la liste des voitures disponibles
+    public static  void afficherVoituresDisponibles(){
+        List<Vehicule> voitures = repository1.findByState(Etatvoiture.Disponile);
+        if (voitures.toString()=="[]") {
+            System.out.println(" \n Aucune voiture n'est disponible!!\n");
+        }
+        else {
+            System.out.println("\nListe des voitures disponibles :");
+            for (Vehicule voiture : voitures){
+                System.out.println(voiture);
+            }
+        }
+    }
+    //afficher la liste des voitures louees
+    static void afficherVoituresLouees(){
+        List<Vehicule> voitures = repository1.findByState(Etatvoiture.Louer);
+        if (voitures.toString()=="[]") {
+            System.out.println(" \n Aucune voiture n'a ete louee!!");
+        }
+        else {
+            System.out.println("\nListe des voitures louees :");
+            for (Vehicule voiture : voitures){
+                System.out.println(voiture);
+            }
+        }
+    }
 
     public static  void afficherVehicule(){
         Iterable<Vehicule> voitures = repository1.findAll();
@@ -84,42 +111,7 @@ public class App {
             System.out.println(voiture);
         }
     }
-    public static void locationVoitures(){
-        System.out.println("\n veuillez entrer votre choix : \n");
-        Long choiceUser = sc.nextLong();
-        Vehicule voitures2 = repository1.findOne(choiceUser);
-        System.out.println("\n vous avez choisi : " +voitures2);
-        //entrer le numero de permis de conduire
-        System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
-        sc.nextLine();
-        String numeroPermis = sc.nextLine();
-        //verifier que le permis est dans la base de donnees
-        Client client = repository.findByPermisnumber(numeroPermis);
-        //inscrire le client dans la base de donnees
-        System.out.println(client);
-        if (client==null){
-            ajouterClient();
-        }
-            DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-            Date date = new Date();
-            System.out.println(dateFormat.format(date));
-           //repository2.save(new Locations(dateFormat.format(date),client.getID(),voitures2.getID()));
-            System.out.println("\n votre location a ete enregistree!! \n");
-    }
-    public static void ajouterClient(){
-        System.out.println("\n identifiez vous sous le format \"prenom,nom,numero de telephone,adresse\" : \n");
-        String identification = sc.nextLine();
-        String[] tableauSauvegarde = identification.split(",");
-        repository.save(new Client(tableauSauvegarde[0],tableauSauvegarde[1],tableauSauvegarde[2],tableauSauvegarde[3],tableauSauvegarde[4]));
-    }
-    public static  void afficherLocation() {
-        Iterable<Locations> louees = repository2.findAll();
-        System.out.println("\n Rental found:");
-        System.out.println("-------------------------------");
-        for (Locations loue : louees) {
-            System.out.println(loue);
-        }
-    }
+
     static void quitter () {
         System.out.println("Etes vous sure de vouloir quitter ? O ou N");
         String reponse = sc.next();
