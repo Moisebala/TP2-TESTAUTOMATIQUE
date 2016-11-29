@@ -23,12 +23,20 @@ public class AffichageTest {
     }
 
     @Test
-    public void Displayvehicule() throws Exception {
+    public void statevehiculedisponible() throws Exception {
         String matricule =vehicule.getMatricule();
         Etatvoiture status =vehicule.getState();
         assertEquals(status,Etatvoiture.Disponile);
         assertEquals(matricule,"789593");
 
+
+    }
+    @Test
+    public void statevehiculelouer() throws Exception {
+        String matricule =vehicule1.getMatricule();
+        Etatvoiture status =vehicule1.getState();
+        assertEquals(status,Etatvoiture.Louer);
+        assertEquals(matricule,"789592");
 
     }
 

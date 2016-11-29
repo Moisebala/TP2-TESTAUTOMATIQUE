@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="026dd743-a178-4862-8392-7f6ea60ec360" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ca/uqam/unittests/LocationTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/LocationTest.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/console/App.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/console/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/repositories/VehiculeRepository.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/repositories/VehiculeRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rental.mv.db" afterPath="$PROJECT_DIR$/rental.mv.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" />
     </list>
     <ignored path="TP2-TESTAUTOMATIQUE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +53,8 @@
       <file leaf-file-name="AffichageTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" column="1" selection-start-line="13" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1010,7 +1004,7 @@
       <workItem from="1480269299083" duration="36000" />
       <workItem from="1480272760754" duration="2178000" />
       <workItem from="1480287758178" duration="6111000" />
-      <workItem from="1480371957247" duration="12815000" />
+      <workItem from="1480371957247" duration="13024000" />
     </task>
     <task id="LOCAL-00001" summary="creation de projet">
       <created>1479097472410</created>
@@ -1131,7 +1125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480382892718</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="afficher voiturer louer et disponible">
+      <created>1480384851733</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1480384851733</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1147,8 +1148,8 @@
     <history-entry file="AffichageTest - 2016.11.28 at 21h 00m 20s.xml">
       <configuration name="AffichageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="location - 2016.11.18 at 18h 51m 29s.xml">
-      <configuration name="location" configurationId="JUnit" />
+    <history-entry file="AffichageTest - 2016.11.28 at 21h 05m 30s.xml">
+      <configuration name="AffichageTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="location - 2016.11.18 at 18h 53m 29s.xml">
       <configuration name="location" configurationId="JUnit" />
@@ -1167,7 +1168,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102601000" />
+    <option name="totallyTimeSpent" value="102810000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1672,8 +1673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="1" selection-start-line="13" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="75">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding />
         </state>
       </provider>
