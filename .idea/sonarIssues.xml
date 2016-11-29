@@ -123,6 +123,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../TP2ModifArmel/src/main/java/ca/uqam/model/Vehicule.java">
           <value>
             <set />

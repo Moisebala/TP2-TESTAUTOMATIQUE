@@ -49,7 +49,7 @@ public class App {
                 appChoice();
                 break;
             case 3:
-                //louerVoiture();
+                louerVoiture();
                 break;
             case 4:
                // retournerVoiture();
@@ -110,6 +110,15 @@ public class App {
         for (Vehicule voiture : voitures){
             System.out.println(voiture);
         }
+    }
+    static void louerVoiture(){
+        long choiceUser;
+        afficherVoituresDisponibles();
+        do{
+            System.out.println("\n veuillez entrer votre choix : \n");
+            choiceUser = sc.nextLong();
+        } while ((repository1.count() < choiceUser) || (choiceUser < 0));
+
     }
 
     static void quitter () {
