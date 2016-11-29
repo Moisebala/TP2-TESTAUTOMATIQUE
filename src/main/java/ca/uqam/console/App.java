@@ -33,7 +33,7 @@ public class App {
                         "1 : Affiche les voitures disponibles\n " +
                         "2 : Affiche les voitures louees \n " +
                         "3 : Louer une voiture \n " +
-                        "4 : Louer une voiture \n " +
+                        "4 : Affiche les clients existants \n " +
                         "5 : Retourner une voiture \n " +
                         "6 : Quitter\n ");
         appChoice();
@@ -47,6 +47,7 @@ public class App {
                 break;
             case 2:
                afficherVoituresLouees();
+                afficherlocation();
                 appChoice();
                 break;
             case 3:
@@ -58,7 +59,7 @@ public class App {
                 appChoice();
                 break;
             case 5:
-               // retournerVoiture();
+               retournerVoiture();
                 help();
                 break;
             case 6:
@@ -152,7 +153,9 @@ public class App {
             repository2.save(new Locations(client, voitures2));
         }
         //changer l etat de la voiture
+
         voitures2.setState(Etatvoiture.Louer);
+        repository1.save(voitures2);
         System.out.println("\n votre location a ete enregistree!! \n");
         System.out.println("Souhaitez vous continuer? O ou N");
         String reponse = sc.nextLine();
@@ -180,6 +183,27 @@ public class App {
         if (reponse.equals("O") || reponse.equals("o")){
             System.exit(0);}
         else{appChoice();}
+
+    }
+    static void retournerVoiture() {
+        System.out.println("Entrer le numero de votre permis SVP: ");
+        sc.nextLine();
+        String permisRetour = sc.nextLine();
+        Client clientConcerne = repository.findByPermisnumber(permisRetour);
+        Locations locationConcerne = repository2.findByClient(clientConcerne);
+        Vehicule voitureConcerne = repository1.findOne(locationConcerne.getIdVehicule());
+        System.out.println("S'agit il de la " +voitureConcerne.toString() +" ? O ou N");
+        String reponse = sc.nextLine();
+        if (reponse.equals("O") || reponse.equals("o")){
+            voitureConcerne.setState((Etatvoiture.Disponile));
+            repository1.save(voitureConcerne);
+            locationConcerne.setDateOfReturn(new Date());
+            System.out.println("Merci pour votre confiance renouvellee");
+            appChoice();
+        }else {
+            System.out.println("Un probleme quelque part!! Verifier le numero de permis entre!");
+            retournerVoiture();
+        }
 
     }
     static void ajouterClient(Client A ,String B){

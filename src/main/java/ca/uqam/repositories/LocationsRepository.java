@@ -13,5 +13,5 @@ import java.util.List;
 public interface LocationsRepository extends CrudRepository<Locations , Long> {
 
     List<Locations> findAll();
-    //List<Locations>findByClientID(Long idclient);
+     Locations findByClient(Client client);
 }

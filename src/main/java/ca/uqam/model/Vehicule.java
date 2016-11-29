@@ -50,6 +50,8 @@ public class Vehicule {
         return String.format("[%dL - Matricule=%s, Marque='%s', Model='%s', Type ='%s' , Year ='%s' ,prix ='%s',Etat ='%s']", id, getMatricule(), Marque, Model, Type, Year, price, getState());
     }
 
+    public Long getIdVehicule(){ return  id;}
+
     public String getMatricule() {
         return Matricule;
     }
