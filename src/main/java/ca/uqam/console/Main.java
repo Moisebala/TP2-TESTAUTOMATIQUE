@@ -29,31 +29,7 @@ public class Main {
     public static void main(String[] args) {
         //repository1.save(new Vehicule("789599","Volkswagen","Passat","Sedan","2016","120","Yes"));
         help();
-        System.out.println("\n Enter something here : \n");
-        int choiceMenu = sc.nextInt();
-
-                switch (choiceMenu) {
-                    case 1:
-                        afficherLocation();
-                        break;
-                    case 2:
-                        afficherClient();
-                        break;
-                    case 3:
-                        afficherVehicule();
-                        break;
-                    case 4:
-                        afficherVehicule();
-                        locationVoitures();
-                        break;
-                    case 5:
-                        System.exit(0);
-                        break;
-                    default:
-                        break;
-                }
-        context.close();
-
-            }
     }
+
+}
 

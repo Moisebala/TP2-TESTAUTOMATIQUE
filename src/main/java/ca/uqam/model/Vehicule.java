@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 @Table
 @Entity(name = "Vehucile")
-public class Vehicule extends AbstractEntity {
+public class Vehicule  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

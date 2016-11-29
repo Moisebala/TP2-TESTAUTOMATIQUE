@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface ClientRepository extends CrudRepository<Client, Long> {
 
-    List<Client[]> findByPermisnumber(@Param("permisnumber") String permisnumber);
+    Client findByPermisnumber(@Param("permisnumber") String permisnumber);
     List<Client> findAll();
 
 

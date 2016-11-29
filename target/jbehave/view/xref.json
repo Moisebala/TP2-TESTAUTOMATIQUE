@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1480289830473,
+  "whenMade": 1480293607781,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
@@ -14,8 +14,8 @@
       "scenarios": "Scenario:Je veux afficher les clients existant\nGiven il y a 2 clients enregistrés PAUL et JEAN\nWhen je veux afficher la liste de nos clients\nThen PAUL et JEAN sont afficher\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1480289819689,
-      "duration": 7624
+      "started": 1480293596793,
+      "duration": 8319
     }
   ],
   "stepMatches": []

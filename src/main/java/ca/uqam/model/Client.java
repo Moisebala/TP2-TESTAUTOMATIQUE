@@ -8,7 +8,7 @@ import javax.persistence.*;
  */
 @Table
 @Entity(name = "Client")
-public class Client extends AbstractEntity {
+public class Client  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -42,4 +42,21 @@ public class Client extends AbstractEntity {
     public String getPermisnumber(){ return permisnumber;}
     public String setPermisnumber(){ return  permisnumber;}
     public Long getID(){ return  id;}
+    //getters et setters
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
 }

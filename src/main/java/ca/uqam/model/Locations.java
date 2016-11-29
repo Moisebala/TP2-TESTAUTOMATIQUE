@@ -5,6 +5,8 @@ import ca.uqam.model.Client;
 import ca.uqam.model.Vehicule;
 
 import javax.persistence.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -16,8 +18,10 @@ public class Locations extends AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long idLocation;
-    @Temporal(TemporalType.DATE)
-    private Date date_of_rent;
+    //@Temporal(TemporalType.DATE)
+    //private String date_of_rent;
+    //@Temporal(TemporalType.DATE)
+    // private String date_of_return;
 
     //location est lié à un client
     @ManyToOne(fetch = FetchType.LAZY , targetEntity=Client.class)
@@ -32,20 +36,29 @@ public class Locations extends AbstractEntity {
     private Long idClient;
     @Column(name = "IDVehicule", insertable = false, updatable = false)
     private Long  idVehicule;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date_of_rent")
+    private Date date_of_rent;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date_of_return")
+    private Date date_of_return;
 
-    public Locations(String format, String numeroPermis, String matricule) {
-        // Default constructor
-            }
-    public Locations(Date date_of_rent, Client client, Vehicule vehicule) {
-         this.date_of_rent = date_of_rent;
-         this.client = client;
-         this.vehicule = vehicule;
+    public Locations() {
 
-      }
+    }
+
+    public Locations( Client client, Vehicule vehicule) {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        this.date_of_rent = new Date();
+        this.client = client;
+        this.vehicule = vehicule;
+        this.date_of_return = new Date(2010-10-10);
+
+    }
 
     @Override
     public String toString() {
-        return String.format("Location[Date='%s',IdClient='%d',IdVehicule= '%d']",date_of_rent,idClient ,idVehicule);
+        return String.format("Location[IdClient='%d', IdVehicule= '%d', DateOfRent='%s', DateOfReturn='%s',]",idClient , idVehicule, date_of_rent, date_of_return);
     }
     public Long getIdClient() {
         return idClient;
@@ -55,6 +68,10 @@ public class Locations extends AbstractEntity {
         return idVehicule
                 ;
     }
-}
 
+    public void setDateOfReturn(Date date) {
+        this.date_of_return = date;
+        ;
+    }
+}
 

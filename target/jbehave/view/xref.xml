@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1480289830473</whenMade>
+  <whenMade>1480293607781</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -23,8 +23,8 @@ Then PAUL et JEAN sont afficher
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1480289819689</started>
-      <duration>7624</duration>
+      <started>1480293596793</started>
+      <duration>8319</duration>
     </story>
   </stories>
   <stepMatches/>

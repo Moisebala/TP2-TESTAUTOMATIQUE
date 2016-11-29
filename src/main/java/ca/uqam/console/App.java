@@ -16,9 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-import static ca.uqam.console.Main.repository;
-import static ca.uqam.console.Main.repository1;
-import static ca.uqam.console.Main.repository2;
+import static ca.uqam.console.Main.*;
 
 /**
  * Created by Mo-is-Balla on 2016-11-26.
@@ -28,15 +26,44 @@ public class App {
 
     static Scanner sc = new Scanner(System.in);
 
-    public static void help() {
-        System.out.println(" \n Mon program fonction comme il faut \n ");
+    static void help() {
+        System.out.println("\n Faites votre choix : \n");
         System.out.println(
-                         "- 0 : Afficher l'aide \n " +
-                        "- 1 : Afficher les voitures disponibles\n " +
-                        "- 2 : Afficher  les Clients \n " +
-                        "- 3 : Louer une voiture \n " +
-                        "- 4 : Retourner une voiture  \n " +
-                        "- 5 : Quitter\n ");
+                "1 : Affiche les voitures disponibles\n " +
+                        "2 : Affiche les voitures louees \n " +
+                        "3 : Louer une voiture \n " +
+                        "4 : Retourner une voiture \n " +
+                        "5 : Quitter\n ");
+        appChoice();
+    }
+    static void appChoice(){
+        int choiceMenu = sc.nextInt();
+        switch (choiceMenu) {
+            case 1:
+                //afficherVoituresDisponibles();
+                appChoice();
+                break;
+            case 2:
+               // afficherVoituresLouees();
+                appChoice();
+                break;
+            case 3:
+                //louerVoiture();
+                break;
+            case 4:
+               // retournerVoiture();
+                help();
+                break;
+            case 5:
+                quitter();
+                break;
+            default:
+                System.out.println("Mauvaise entree ! Veuillez reessayer ");
+                help();
+                break;
+        }
+        context.close();
+        sc.close();
     }
 
     public static void afficherClient() {
@@ -67,16 +94,16 @@ public class App {
         sc.nextLine();
         String numeroPermis = sc.nextLine();
         //verifier que le permis est dans la base de donnees
-        List<Client[]> client = repository.findByPermisnumber(numeroPermis);
+        Client client = repository.findByPermisnumber(numeroPermis);
         //inscrire le client dans la base de donnees
-        System.out.println(client.get(0));
-        if (client.isEmpty()){
+        System.out.println(client);
+        if (client==null){
             ajouterClient();
         }
             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
             Date date = new Date();
             System.out.println(dateFormat.format(date));
-            //repository2.save(new Locations(dateFormat.format(date),"",voitures2.getID()));
+           //repository2.save(new Locations(dateFormat.format(date),client.getID(),voitures2.getID()));
             System.out.println("\n votre location a ete enregistree!! \n");
     }
     public static void ajouterClient(){
@@ -93,6 +120,13 @@ public class App {
             System.out.println(loue);
         }
     }
+    static void quitter () {
+        System.out.println("Etes vous sure de vouloir quitter ? O ou N");
+        String reponse = sc.next();
+        if (reponse.equals("O") || reponse.equals("o")){
+            System.exit(0);}
+        else{appChoice();}
 
+    }
 }
 
