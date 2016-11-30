@@ -12,16 +12,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/repositories/LocationsRepository.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/repositories/LocationsRepository.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ca/uqam/acceptancetests/steps/RetourVoitureSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/ca/uqam/acceptancetests/steps/RetourVoitureSteps.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ca/uqam/acceptancetests/steps/locationstep.class" afterPath="$PROJECT_DIR$/target/test-classes/ca/uqam/acceptancetests/steps/locationstep.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rental.mv.db" afterPath="$PROJECT_DIR$/rental.mv.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Client.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Locations.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Locations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/LocationsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/LocationsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/VehiculeRepository.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/VehiculeRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherclientStep.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherclientStep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/RetourVoitureSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/RetourVoitureSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stories/Location_voiture.story" afterPath="$PROJECT_DIR$/target/test-classes/stories/Location_voiture.story" />
     </list>
     <ignored path="TP2-TESTAUTOMATIQUE.iws" />
@@ -1203,7 +1194,7 @@
       <workItem from="1480287758178" duration="6111000" />
       <workItem from="1480371957247" duration="23136000" />
       <workItem from="1480426181699" duration="29250000" />
-      <workItem from="1480523373612" duration="4700000" />
+      <workItem from="1480523373612" duration="4728000" />
     </task>
     <task id="LOCAL-00001" summary="creation de projet">
       <created>1479097472410</created>
@@ -1366,7 +1357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480480064126</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="afficher voiturer louer et disponible">
+      <created>1480529057929</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1480529057929</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1402,7 +1400,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146872000" />
+    <option name="totallyTimeSpent" value="146900000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
