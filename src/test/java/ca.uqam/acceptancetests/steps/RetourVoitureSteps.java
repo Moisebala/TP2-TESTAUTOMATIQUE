@@ -42,17 +42,18 @@ public class RetourVoitureSteps {
     }
 
     @Given("Voiture \"A1\" est a l'etat louer")
-    public void givenVoitureA1EstALetatLouer(Long id) {
-        //this.vehicule=locationsRepository.findByIdVehicule(id);
+    public void givenVoitureA1EstALetatLouer(Vehicule A1) {
+        this.location=locationsRepository.findByVehicule(A1);
     }
 
     @Given("\"Paul\" est locataire de voiture \"A1\"")
-    public void givenPaulEstLocataireDeVoitureA1(String permis) {
-        this.client=clientRepository.findByPermisnumber(permis);
+    public void givenPaulEstLocataireDeVoitureA1(Client paul) {
+        this.location=locationsRepository.findByClient(paul);
     }
 
     @When("J'entre le numero de permis de \"Paul\"")
     public void whenJentreLeNumeroDePermisDePaul(String permis) {
+
 
     }
 

@@ -61,7 +61,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-11-2016 20:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-11-2016 13:03</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -95,10 +95,10 @@
                     <tr>
                         <td colspan="2" class="test-title-bar">
                             <span class="outcome-icon"><img class="story-outcome-icon"
-                                                            src="images/cross.png"/></span>
+                                                            src="images/pending.png"/></span>
                             <span class="test-case-title">
 
-                                <span class="error-color">Je Veux Afficher Les Clients Existant
+                                <span class="pending-color">Je Veux Afficher Les Clients Existant
                                     <span class="related-issue-title"></span>
                             </span>
                         </span>
@@ -133,80 +133,108 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
                         <a name="0"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/cross.png" class="top-level-icon"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <img src="images/plus.png" width="24" class="imgstepSection0"
+                                     style="margin-left: 20px; float:left;  padding-right:5px"/>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
                             <span class="top-level-step">Given "Paul" est un client enregistré</span>
+                            </a>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.03s</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/ignor.png" class="top-level-icon"/>
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/pending.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">And "Jean" est un client enregistré</span>
+                            <span class="nested-group-step">Given "Paul" est un client enregistré</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-IGNORED">
                     <td width="60" class="step-icon">
-                        <a name="2"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/ignor.png" class="top-level-icon"/>
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/ignor.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">When j'affiche la liste des clients</span>
+                            <span class="nested-group-step">And "Jean" est un client enregistré</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-IGNORED">
                     <td width="60" class="step-icon">
-                        <a name="3"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/ignor.png" class="top-level-icon"/>
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/ignor.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Then "Paul" est dans la liste affichée</span>
+                            <span class="nested-group-step">When j'affiche la liste des clients</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-IGNORED">
                     <td width="60" class="step-icon">
-                        <a name="4"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/ignor.png" class="top-level-icon"/>
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/ignor.png" class="nested-group-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">And "Jean" est dans la liste affichée</span>
+                            <span class="nested-group-step">Then "Paul" est dans la liste affichée</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-IGNORED">
+                    <td width="60" class="step-icon">
+                        
+                            <img style="margin-left: 40px; margin-right: 5px;"
+                                 src="images/ignor.png" class="nested-group-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And "Jean" est dans la liste affichée</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">IGNORED</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-PENDING">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>6.21s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>7.87s</em></span></td>
                 </tr>
 
             </table>

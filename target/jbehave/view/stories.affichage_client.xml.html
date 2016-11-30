@@ -15,17 +15,11 @@
   <iWantTo keyword="So that">I can see all my customer display</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Je veux afficher les clients existant">
-<step outcome="failed" keyword="FAILED">Given &quot;Paul&quot; est un client enregistr&#233;<failure>java.lang.NullPointerException</failure></step>
+<step outcome="pending" keyword="PENDING">Given &quot;Paul&quot; est un client enregistr&#233;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And &quot;Jean&quot; est un client enregistr&#233;</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">When j&apos;affiche la liste des clients</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">Then &quot;Paul&quot; est dans la liste affich&#233;e</step>
 <step outcome="notPerformed" keyword="NOT PERFORMED">And &quot;Jean&quot; est dans la liste affich&#233;e</step>
-<failure>java.lang.NullPointerException
-	at ca.uqam.acceptancetests.steps.AfficherclientStep.givenPaulEstUnClientEnregistr&#233;(AfficherclientStep.java:40)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
-	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
-...</failure>
 </scenario>
 </story>
 

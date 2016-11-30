@@ -18,4 +18,6 @@ public interface LocationsRepository extends CrudRepository<Locations , Long> {
     Locations findByClient(Client client);
 
     Locations findByVehicule(Vehicule voiture);
+
+
 }

@@ -38,12 +38,10 @@ public class AfficherclientStep {
     @Given("\"Jean\" est un client enregistr\u00E9")
     public void givenJeanEstUnClientEnregistré(String permisnumber) {
       this.jean=clientRepository.findByPermisnumber(permisnumber) ;
-
     }
     @When("j'affiche la liste des clients")
     public void whenJafficheLaListeDesClients() {
         this.clientList =clientRepository.findAll();
-
     }
     @Then("\"Paul\" est dans la liste affich\u00E9e")
     public void thenPaulEstDansLaListeAffichée() {assertEquals(true ,this.clientList.contains(this.paul));

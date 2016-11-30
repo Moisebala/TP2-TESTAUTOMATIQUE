@@ -1,21 +1,21 @@
 {"xref": {
-  "whenMade": 1480479212224,
+  "whenMade": 1480528984679,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
   "stories": [
     {
       "description": "",
-      "narrative": "In order to \nAs a user\nI want to rent a car\n",
-      "name": "location_voiture.story",
-      "path": "stories/location_voiture.story",
-      "html": "stories.location_voiture.html",
+      "narrative": "In order to \nAs a user\nI want to display my existing customer\n",
+      "name": "affichage_client.story",
+      "path": "stories/affichage_client.story",
+      "html": "stories.affichage_client.html",
       "meta": "",
-      "scenarios": "Scenario:Louer une voiture a un nouveau client\nGiven la voiture \"A1\" est disponible\nAnd \"Paul\" est un nouveau client\nWhen \"Paul\" sélectionne la voiture \"A1\"\nThen \"Paul\" est un client actif\nAnd la voiture \"A1\" est louée par \"Paul\"\n\n\nScenario:Louer une voiture a un ancien client\nGiven la voiture \"A1\" est disponible\nAnd \"Paul\"est un ancien client\nWhen Paul sélectionne la voiture \"A1\"\nThen la voiture \"A1\" est louée par \"Paul\"\n\n\nScenario:Louer une voiture deja louees a un client\nGiven la voiture \"A1\" est déjà louée à \"Jean\"\nWhen \"Paul\" sélectionne la voiture \"A1\"\nThen la voiture \"A1\" est louée par \"Jean\"\n\n\n",
+      "scenarios": "Scenario:Je veux afficher les clients existant\nGiven \"Paul\" est un client enregistré\nAnd \"Jean\" est un client enregistré\nWhen j'affiche la liste des clients\nThen \"Paul\" est dans la liste affichée\nAnd \"Jean\" est dans la liste affichée\n\n\n",
       "passed": true,
       "pending": true,
-      "started": 1480479191115,
-      "duration": 16333
+      "started": 1480528972598,
+      "duration": 8478
     }
   ],
   "stepMatches": []

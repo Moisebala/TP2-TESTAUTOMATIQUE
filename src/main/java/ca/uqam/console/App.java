@@ -14,10 +14,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 import static ca.uqam.console.Main.*;
 
@@ -26,110 +23,65 @@ import static ca.uqam.console.Main.*;
  */
 
 public class App {
-    static ConfigurableApplicationContext context = SpringApplication.run(Config.class);
+    //static ConfigurableApplicationContext context = SpringApplication.run(Config.class);
     static ClientRepository repository = context.getBean(ClientRepository.class);
     static VehiculeRepository repository1= context.getBean(VehiculeRepository.class);
     static LocationsRepository repository2=context.getBean(LocationsRepository.class);
     private App(){
         //Constructor par defaut
     }
+    //initialiser la base de donnees
+    public static void initialisationBase() {
+        repository1.save(new Vehicule("78959600","Toyota","Camry","Sedan","2016","120",Etatvoiture.Disponile));
+        repository1.save(new Vehicule("20162009","Honda","Accord","SEDAN","2016","120", Etatvoiture.Disponile));
+        repository1.save(new Vehicule("20162010","gip","Accord","SEDAN","2016","120", Etatvoiture.Disponile));
 
-    static Scanner sc = new Scanner(System.in);
+        repository.save(new Client("AM002300","Armelle","Tenekeu","5147718969","1345 rue saint charles"));
+        repository.save(new Client("AM002310","Mama","Kouboura","5146740886","1345 chemin de Chambly"));
+        repository.save(new Client("AM002312","Moussa","Balla","5146212124","1345 rue de la barre"));
 
-    static void help() {
-        System.out.println("\n Faites votre choix : \n");
-        System.out.println(
-                        "1 : Affiche les voitures disponibles\n " +
-                        "2 : Affiche les voitures louees \n " +
-                        "3 : Louer une voiture \n " +
-                        "4 : Affiche les clients existants \n " +
-                        "5 : Retourner une voiture \n " +
-                        "6 : Quitter\n ");
-        appChoice();
     }
-    static void appChoice(){
-        int choiceMenu = sc.nextInt();
-        switch (choiceMenu) {
-            case 1:
-                afficherVoituresDisponibles();
-                appChoice();
-                break;
-            case 2:
-               afficherVoituresLouees();
-                afficherlocation();
-                appChoice();
-                break;
-            case 3:
-                louerVoiture();
-                appChoice();
-                break;
-            case 4:
-                afficherClient();
-                appChoice();
-                break;
-            case 5:
-               retournerVoiture();
-                help();
-                break;
-            case 6:
-                quitter();
-                break;
-            default:
-                System.out.println("Mauvaise entree ! Veuillez reessayer ");
-                help();
-                break;
-        }
-        context.close();
-        sc.close();
+
+    public static ArrayList<Vehicule> allCars() {
+        ArrayList<Vehicule> list_voitures = new ArrayList<Vehicule>();
+        Iterable<Vehicule> voitures = repository1.findAll();
+        for (Vehicule voiture : voitures)
+            list_voitures.add(voiture);
+        return list_voitures;
     }
+
+    public static ArrayList<Locations> allLocations() {
+        ArrayList<Locations> list_locations = new ArrayList<Locations>();
+        Iterable<Locations> locations = repository2.findAll();
+        for (Locations location : locations)
+            list_locations.add(location);
+        return list_locations;
+    }
+
 
     public static void afficherClient() {
         List<Client> customers = repository.findAll();
-        System.out.println("Customers found:");
-        System.out.println("-------------------------------");
         for (Client customer : customers){
             System.out.println(customer);
         }
     }
-    //afficher la liste des voitures disponibles
-    public static  void afficherVoituresDisponibles(){
-        List<Vehicule> voitures = repository1.findByState(Etatvoiture.Disponile);
-        if (voitures.toString()=="[]") {
-            System.out.println(" \n Aucune voiture n'est disponible!!\n");
-        }
-        else {
-            System.out.println("\nListe des voitures disponibles :");
-            for (Vehicule voiture : voitures){
-                System.out.println(voiture);
-            }
-        }
-    }
+
+
     //afficher la liste des voitures louees
-    static void afficherVoituresLouees(){
-        List<Vehicule> voitures = repository1.findByState(Etatvoiture.Louer);
-        if (voitures.toString()=="[]") {
-            System.out.println(" \n Aucune voiture n'a ete louee!!");
+    public static  ArrayList<Vehicule> voituresLouees(){
+        ArrayList<Vehicule> voitures = allCars();
+        for(Vehicule voiture :voitures)
+        {  if(voiture.getState()==Etatvoiture.Louer) {
+            voitures.add(voiture);
         }
-        else {
-            System.out.println("\nListe des voitures louees :");
-            for (Vehicule voiture : voitures){
-                System.out.println(voiture);
-            }
         }
+        return  voitures;
     }
 
-    public static  void afficherVehicule(){
-        Iterable<Vehicule> voitures = repository1.findAll();
-        System.out.println("\n Vehicule found:");
-        System.out.println("-------------------------------");
-        for (Vehicule voiture : voitures){
-            System.out.println(voiture);
-        }
-    }
     //methode pour louer une voiture
     static void louerVoiture(){
         long choiceUser;
-        afficherVoituresDisponibles();
+        //afficherVoituresDisponibles();
         //recuperer le choix de l'utilisateur
         do{
             System.out.println("\n veuillez entrer votre choix : \n");
@@ -207,7 +159,9 @@ public class App {
         if (reponse.equals("O") || reponse.equals("o")){
             voitureConcerne.setState((Etatvoiture.Disponile));
             repository1.save(voitureConcerne);
+            repository.save(clientConcerne);
             locationConcerne.setDateOfReturn(new Date());
+            repository2.save(locationConcerne);
             System.out.println("Merci pour votre confiance renouvellee");
             appChoice();
         }else {
