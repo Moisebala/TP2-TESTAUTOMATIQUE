@@ -27,7 +27,6 @@ public class Main {
 
     static AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
     static ArrayList<Vehicule> listeVoituresDisponibles = new ArrayList<Vehicule>();
-    static ArrayList<Locations> listeLocations = new ArrayList<Locations>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -54,11 +53,40 @@ public class Main {
                 appChoice();
                 break;
             case 2:
-               System.out.println(App.voituresLouees());
+                afficherVoitureslouees();
                 appChoice();
                 break;
             case 3:
                 louerVoiture();
+                long choiceUser;
+                afficherVoituresDisponibles();
+                do{
+                    System.out.println("\n veuillez entrer votre choix : \n");
+                    choiceUser = sc.nextLong();
+                } while (!(choiceUser>0&&choiceUser<=repository1.count()));
+               Vehicule voitures2=App.rechercheVehicule(choiceUser);
+                System.out.println("\n vous avez choisi : " +voitures2);
+
+                System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
+                sc.nextLine();
+                String numeroPermis = sc.nextLine();
+                Client client =App.rechercheClient(numeroPermis);
+                Client nouveauClient=new Client();
+                if (client == null){
+                    ajouterClient(nouveauClient,numeroPermis);}
+
+
+                System.out.println("\n votre location a ete enregistree!! \n");
+                System.out.println("Souhaitez vous continuer? O ou N");
+                String reponse = sc.nextLine();
+                if(reponse.equals("O") || reponse.equals("o"))
+                    help();
+                else {
+                    System.out.println("Merci pour cette confiance renouvellee. Au plaisir de vous revoir!");
+                    System.exit(0);
+                }
+
+
                 appChoice();
                 break;
             case 4:
@@ -89,9 +117,18 @@ public class Main {
                 if(voiture.getState()==Etatvoiture.Disponile && voitures.toString()!="[]") {
                     System.out.println(voiture);
                 }
-                else { throw new IllegalStateException();}
             }
         }
+    //afficher la liste des voitures louees
+    static void afficherVoitureslouees(){
+        List<Vehicule> voitures =App.allCars();
+        System.out.println("\nListe des voitures disponibles :");
+        for (Vehicule voiture : voitures){
+            if(voiture.getState()==Etatvoiture.Louer && voitures.toString()!="[]") {
+                System.out.println(voiture);
+            }
+        }
+    }
 
     }
 

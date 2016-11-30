@@ -27,6 +27,7 @@ public class App {
     static ClientRepository repository = context.getBean(ClientRepository.class);
     static VehiculeRepository repository1= context.getBean(VehiculeRepository.class);
     static LocationsRepository repository2=context.getBean(LocationsRepository.class);
+    static ArrayList<Locations> listeLocations = new ArrayList<Locations>();
     private App(){
         //Constructor par defaut
     }
@@ -66,18 +67,6 @@ public class App {
         }
     }
 
-
-    //afficher la liste des voitures louees
-    public static  ArrayList<Vehicule> voituresLouees(){
-        ArrayList<Vehicule> voitures = allCars();
-        for(Vehicule voiture :voitures)
-        {  if(voiture.getState()==Etatvoiture.Louer) {
-            voitures.add(voiture);
-        }
-        }
-        return  voitures;
-    }
-
     //methode pour louer une voiture
     static void louerVoiture(){
         long choiceUser;
@@ -87,6 +76,7 @@ public class App {
             System.out.println("\n veuillez entrer votre choix : \n");
             choiceUser = sc.nextLong();
         } while (!(choiceUser>0&&choiceUser<=repository1.count()));
+
         Vehicule voitures2 = repository1.findOne(choiceUser);
         System.out.println("\n vous avez choisi : " +voitures2);
         //entrer le numero de permis de conduire
@@ -113,19 +103,22 @@ public class App {
             repository2.save(new Locations(client, voitures2));
         }
         //changer l etat de la voiture
+        voitures2 =changeretat(voitures2);
+    }
+    static ArrayList<Locations>saveLocation(Client client , Vehicule voiture){
+        Locations location =repository2.save(new Locations(client,voiture));
 
-        voitures2.setState(Etatvoiture.Louer);
-        repository1.save(voitures2);
-        System.out.println("\n votre location a ete enregistree!! \n");
-        System.out.println("Souhaitez vous continuer? O ou N");
-        String reponse = sc.nextLine();
-        if(reponse.equals("O") || reponse.equals("o"))
-            help();
-        else {
-            System.out.println("Merci pour cette confiance renouvellee. Au plaisir de vous revoir!");
-            System.exit(0);
-        }
+        return
 
+    }
+
+    static Vehicule changeretat(Vehicule voiture){
+        if (voiture.getState()==Etatvoiture.Disponile){
+            voiture.setState(Etatvoiture.Louer);
+            repository1.save(voiture);
+        }else {voiture.setState(Etatvoiture.Disponile)
+            repository1.save(voiture);;}
+        return voiture;
     }
     static void afficherlocation(){
         //verification des locations
