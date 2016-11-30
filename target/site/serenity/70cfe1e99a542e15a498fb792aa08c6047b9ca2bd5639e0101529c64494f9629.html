@@ -61,7 +61,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-11-2016 15:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-11-2016 18:46</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -95,10 +95,10 @@
                     <tr>
                         <td colspan="2" class="test-title-bar">
                             <span class="outcome-icon"><img class="story-outcome-icon"
-                                                            src="images/success.png"/></span>
+                                                            src="images/pending.png"/></span>
                             <span class="test-case-title">
 
-                                <span class="success-color">Je Veux Afficher Les Voitures Disponibles
+                                <span class="pending-color">Je Veux Afficher Les Voitures Disponibles
                                     <span class="related-issue-title"></span>
                             </span>
                         </span>
@@ -133,94 +133,144 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/cross.png" class="top-level-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="top-level-step">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">0.02s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <span class="error-message ellipsis"
+                                  title='Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException'><pre>Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</pre></span>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#stacktraceModal">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.jbehave.core.failures.BeforeOrAfterFailed :  Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                        </td>
+                    </tr>
+                <tr class="test-PENDING">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <img style="margin-left: 20px; margin-right: 5px;"
+                                 src="images/pending.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="top-level-step">Given il y a 2 voitures disponibles</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.07s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">And la voiture A1 est disponible</span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/pending.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">And la voiture A2 est disponible</span>
+                            <span class="top-level-step">And la voiture "A1" est disponible</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
                     <td width="100"><span class="top-level-step">0.01s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
                         <a name="3"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/pending.png" class="top-level-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="top-level-step">And la voiture "A2" est disponible</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
+                    <td width="100"><span class="top-level-step">0.01s</span></td>
+                </tr>
+                <tr class="test-PENDING">
+                    <td width="60" class="step-icon">
+                        <a name="4"/>
+                            <img style="margin-left: 20px; margin-right: 5px;"
+                                 src="images/pending.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="top-level-step">When je veux afficher la liste des voitures disponibles</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.02s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="4"/>
-                            <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Then la voiture A1 est indiquée comme étant disponible</span>
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
                     <td width="100"><span class="top-level-step">0.01s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
                     <td width="60" class="step-icon">
                         <a name="5"/>
                             <img style="margin-left: 20px; margin-right: 5px;"
-                                 src="images/success.png" class="top-level-icon"/>
+                                 src="images/pending.png" class="top-level-icon"/>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">And la voiture A2 est indiquée comme étant disponible</span>
+                            <span class="top-level-step">Then la voiture "A1" est indiquée comme étant disponible</span>
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
                     <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-PENDING">
+                    <td width="60" class="step-icon">
+                        <a name="6"/>
+                            <img style="margin-left: 20px; margin-right: 5px;"
+                                 src="images/pending.png" class="top-level-icon"/>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="top-level-step">And la voiture "A2" est indiquée comme étant disponible</span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">PENDING</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
+                </tr>
+                <tr class="test-PENDING">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>7.07s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>6.96s</em></span></td>
                 </tr>
 
             </table>

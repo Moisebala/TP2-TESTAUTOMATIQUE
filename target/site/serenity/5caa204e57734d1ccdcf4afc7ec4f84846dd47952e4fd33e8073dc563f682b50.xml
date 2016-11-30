@@ -1,24 +1,27 @@
-<acceptance-test-run title="Je veux afficher toutes les voitures, louées ou non" name="Je veux afficher toutes les voitures, louées ou non" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="599" timestamp="2016-11-27T15:54:15.847-05:00">
+<acceptance-test-run title="Je veux afficher toutes les voitures, louées ou non" name="Je veux afficher toutes les voitures, louées ou non" steps="6" successful="0" failures="0" errors="1" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="520" timestamp="2016-11-29T18:46:08.907-05:00">
   <user-story id="afficher_voiture" name="Afficher voiture" path="stories/afficher_voiture.story"/>
   <tags>
     <tag name="Afficher voiture" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="16">
-    <description>Given la voiture A1 est louée à Paul</description>
+  <test-step result="ERROR" duration="2">
+    <description>ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()</description>
+    <error>Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</error>
+    <exception>org.jbehave.core.failures.BeforeOrAfterFailed:Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
+[]</exception>
   </test-step>
-  <test-step result="SUCCESS" duration="2">
-    <description>And la voiture A2 est disponible</description>
+  <test-step result="PENDING" duration="1">
+    <description>Given la voiture &quot;A1&quot; est louée à Paul</description>
   </test-step>
-  <test-step result="SUCCESS" duration="13">
+  <test-step result="PENDING" duration="1">
+    <description>And la voiture &quot;A2&quot; est disponible</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
     <description>When je demande l’affichage de la liste de toutes les voitures</description>
   </test-step>
-  <test-step result="SUCCESS" duration="10">
-    <description>Then la voiture A1 est indiquée comme louee a Paul</description>
+  <test-step result="PENDING" duration="1">
+    <description>Then la voiture &quot;A1&quot; est indiquée comme louee a Paul</description>
   </test-step>
-  <test-step result="SUCCESS" duration="16">
-    <description>And la voiture A2 est indiquée comme étant disponible</description>
-  </test-step>
-  <test-step result="SUCCESS" duration="3">
-    <description>And la voiture A3 est indiquée comme étant disponible</description>
+  <test-step result="PENDING" duration="1">
+    <description>And la voiture &quot;A2&quot;est indiquée comme étant disponible</description>
   </test-step>
 </acceptance-test-run>

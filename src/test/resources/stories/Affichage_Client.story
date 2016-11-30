@@ -6,6 +6,10 @@ I want to display my existing customer
 So that I can see all my customer display
 
 Scenario: Je veux afficher les clients existant
-Given il y a 2 clients enregistrés PAUL et JEAN
-When je veux afficher la liste de nos clients
-Then PAUL et JEAN sont afficher
+Given "Paul" est un client enregistré
+And "Jean" est un client enregistré
+When j'affiche la liste des clients
+Then "Paul" est dans la liste affichée
+And "Jean" est dans la liste affichée
+
+

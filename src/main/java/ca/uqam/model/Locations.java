@@ -18,10 +18,6 @@ public class Locations extends AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long idLocation;
-    //@Temporal(TemporalType.DATE)
-    //private String date_of_rent;
-    //@Temporal(TemporalType.DATE)
-    // private String date_of_return;
 
     //location est lié à un client
     @ManyToOne(fetch = FetchType.LAZY , targetEntity=Client.class)
@@ -73,5 +69,7 @@ public class Locations extends AbstractEntity {
         this.date_of_return = date;
         ;
     }
+    public  Client getClient(){ return  client;}
+
 }
 

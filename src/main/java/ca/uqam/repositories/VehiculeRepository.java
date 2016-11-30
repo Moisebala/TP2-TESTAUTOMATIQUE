@@ -12,6 +12,7 @@ import java.util.List;
 public interface VehiculeRepository extends CrudRepository<Vehicule,Long> {
 
     List<Vehicule> findByState(Etatvoiture state);
+
     List<Vehicule> findAll();
 
 }

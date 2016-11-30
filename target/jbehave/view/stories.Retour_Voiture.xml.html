@@ -8,22 +8,22 @@
 <body>
  
 <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
-<story path="stories/Retour_Voiture.story" title="">
+<story path="stories/retour_voiture.story" title="">
 <narrative keyword="Narrative:">
   <inOrderTo keyword="As a">user</inOrderTo>
   <asA keyword="I want to">return a car</asA>
   <iWantTo keyword="So that">I can change the car status to available</iWantTo>
 </narrative>
 <scenario keyword="Scenario:" title="Retour de voiture">
-<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;locationsRepository&apos;: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Given la voiture A1 est lou&#233;e &#224; Paul</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">When Paul retourne la voiture A1</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then A1 est disponible</step>
-<step outcome="failed" keyword="FAILED">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown()<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</failure></step>
-<failure>org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
-	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
-	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
-	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+<step outcome="failed" keyword="FAILED">Given Voiture &quot;A1&quot; est a l&apos;etat louer<failure>java.lang.NullPointerException</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Given &quot;Paul&quot; est locataire de voiture &quot;A1&quot;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When J&apos;entre le numero de permis de &quot;Paul&quot;</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Voite &quot;A1&quot; est l&apos;etat disponible</step>
+<failure>java.lang.NullPointerException
+	at ca.uqam.acceptancetests.steps.RetourVoitureSteps.givenVoitureA1EstALetatLouer(RetourVoitureSteps.java:45)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
 ...</failure>
 </scenario>
 </story>

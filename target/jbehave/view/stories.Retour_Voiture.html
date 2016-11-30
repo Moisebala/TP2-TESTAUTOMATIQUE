@@ -8,7 +8,7 @@
 <body>
 <div class="story">
 <h1></h1>
-<div class="path">stories/Retour_Voiture.story</div>
+<div class="path">stories/retour_voiture.story</div>
 <div class="narrative"><h2>Narrative:</h2>
 <div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
 <div class="element asA"><span class="keyword asA">I want to</span> return a car</div>
@@ -16,15 +16,15 @@
 </div>
 <div class="scenario">
 <h2>Scenario: Retour de voiture</h2>
-<div class="step failed">ca.uqam.acceptancetests.steps.AfficherclientStep.setUp() <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.jbehave.core.failures.BeforeOrAfterFailed: Method setUp (annotated with @BeforeScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationsRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Could not create query metamodel for method public abstract java.util.List ca.uqam.repositories.LocationsRepository.findByClientID(java.lang.Long)!</span></div>
-<div class="step notPerformed">Given la voiture A1 est lou&eacute;e &agrave; Paul <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">When Paul retourne la voiture A1 <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then A1 est disponible <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step failed">ca.uqam.acceptancetests.steps.AfficherclientStep.tearDown() <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException</span></div>
-<pre class="failure">org.jbehave.core.failures.BeforeOrAfterFailed: Method tearDown (annotated with @AfterScenario in class ca.uqam.acceptancetests.steps.AfficherclientStep) failed: java.lang.NullPointerException
-	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.perform(StepCreator.java:491)
-	at org.jbehave.core.steps.StepCreator$BeforeOrAfterStep.doNotPerform(StepCreator.java:504)
-	at org.jbehave.core.embedder.StoryRunner$SomethingHappened.run(StoryRunner.java:601)
+<div class="step failed">Given Voiture &quot;A1&quot; est a l'etat louer <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.NullPointerException</span></div>
+<div class="step notPerformed">Given &quot;Paul&quot; est locataire de voiture &quot;A1&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">When J'entre le numero de permis de &quot;Paul&quot; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then Voite &quot;A1&quot; est l'etat disponible <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">java.lang.NullPointerException
+	at ca.uqam.acceptancetests.steps.RetourVoitureSteps.givenVoitureA1EstALetatLouer(RetourVoitureSteps.java:45)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
 ...</pre>
 </div>
 </div>

@@ -15,7 +15,7 @@ And la voiture "A1" est louée par "Paul"
 Scenario: Louer une voiture a un ancien client
 Given la voiture "A1" est disponible
 And "Paul"est un ancien client
-When Paul sélectionne la voiture "A1"
+When "Paul" sélectionne la voiture "A1"
 Then la voiture "A1" est louée par "Paul"
 
 Scenario: Louer une voiture deja louees a un client

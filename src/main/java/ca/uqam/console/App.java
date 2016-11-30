@@ -8,6 +8,8 @@ import ca.uqam.model.Vehicule;
 import ca.uqam.repositories.ClientRepository;
 import ca.uqam.repositories.LocationsRepository;
 import ca.uqam.repositories.VehiculeRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.text.DateFormat;
@@ -24,6 +26,13 @@ import static ca.uqam.console.Main.*;
  */
 
 public class App {
+    static ConfigurableApplicationContext context = SpringApplication.run(Config.class);
+    static ClientRepository repository = context.getBean(ClientRepository.class);
+    static VehiculeRepository repository1= context.getBean(VehiculeRepository.class);
+    static LocationsRepository repository2=context.getBean(LocationsRepository.class);
+    private App(){
+        //Constructor par defaut
+    }
 
     static Scanner sc = new Scanner(System.in);
 
@@ -81,7 +90,6 @@ public class App {
         for (Client customer : customers){
             System.out.println(customer);
         }
-
     }
     //afficher la liste des voitures disponibles
     public static  void afficherVoituresDisponibles(){
@@ -198,6 +206,7 @@ public class App {
             voitureConcerne.setState((Etatvoiture.Disponile));
             repository1.save(voitureConcerne);
             locationConcerne.setDateOfReturn(new Date());
+            repository2.save(locationConcerne);
             System.out.println("Merci pour votre confiance renouvellee");
             appChoice();
         }else {
@@ -230,6 +239,18 @@ public class App {
         A.setPhone(numeroClient);
         A.setAdresse(adresseClient);
         repository.save(A);
+    }
+    static Client rechercheClient(String permis){
+        Client clientConcerne = repository.findByPermisnumber(permis);
+        return clientConcerne;
+    }
+    static Vehicule rechercheVehicule(Long iden){
+        Vehicule voitureConcerne = repository1.findOne(iden);
+        return voitureConcerne;
+    }
+
+        static Locations rechercheLocation(Client client){Locations locationConcerne = repository2.findByClient(client);
+         return locationConcerne ;
     }
 }
 

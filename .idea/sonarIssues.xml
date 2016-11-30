@@ -83,6 +83,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/Repository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/VehiculeRepository.java">
           <value>
             <set />
@@ -99,6 +104,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/Affichervoiture.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/LocationVoiture.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/RetourVoiture.java">
           <value>
             <set />
           </value>
@@ -123,7 +138,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/locationstep.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Affichage_Client.story">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Location_voiture.story">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Retour_Voiture.story">
           <value>
             <set />
           </value>
@@ -154,6 +199,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../gestionnaire-cours 2/src/main/java/ca/uqam/model/ValidatedCourse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../gestionnaire-cours 2/src/test/java/ca/uqam/acceptancetests/steps/CoursesTermSteps.java">
           <value>
             <set />
           </value>

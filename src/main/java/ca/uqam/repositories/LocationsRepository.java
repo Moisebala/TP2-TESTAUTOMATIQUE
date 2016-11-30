@@ -2,6 +2,7 @@ package ca.uqam.repositories;
 
 import ca.uqam.model.Client;
 import ca.uqam.model.Locations;
+import ca.uqam.model.Vehicule;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Date;
@@ -14,4 +15,5 @@ public interface LocationsRepository extends CrudRepository<Locations , Long> {
 
     List<Locations> findAll();
      Locations findByClient(Client client);
+    Vehicule findByIdVehicule(Long id);
 }

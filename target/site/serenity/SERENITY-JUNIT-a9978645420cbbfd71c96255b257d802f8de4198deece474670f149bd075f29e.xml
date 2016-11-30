@@ -1,1 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Affichage client" skipped="0" tests="1" time="7.6" timestamp="2016-11-332 07:39:57"><testcase name="Je veux afficher les clients existant"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Affichage client" skipped="0" tests="1" time="6.21" timestamp="2016-11-334 08:16:49"><testcase name="Je veux afficher les clients existant"><error type="java.lang.NullPointerException"/><system-err>null
+ca.uqam.acceptancetests.steps.AfficherclientStep.givenPaulEstUnClientEnregistré(AfficherclientStep.java:40)
+</system-err></testcase></testsuite>
