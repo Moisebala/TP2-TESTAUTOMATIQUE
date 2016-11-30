@@ -32,17 +32,18 @@ public class RetourVoitureSteps {
     Client client =null;
     Vehicule vehicule =null;
 
-
     @BeforeScenario
     public void setUp(){
         context = SpringApplication.run(Config.class);
         vehiculeRepository = context.getBean(VehiculeRepository.class);
+        clientRepository =context.getBean(ClientRepository.class);
+        locationsRepository =context.getBean(LocationsRepository.class);
 
     }
 
     @Given("Voiture \"A1\" est a l'etat louer")
     public void givenVoitureA1EstALetatLouer(Long id) {
-        this.vehicule=locationsRepository.findByIdVehicule(id);
+        //this.vehicule=locationsRepository.findByIdVehicule(id);
     }
 
     @Given("\"Paul\" est locataire de voiture \"A1\"")

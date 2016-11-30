@@ -69,6 +69,10 @@ public class Locations extends AbstractEntity {
         this.date_of_return = date;
         ;
     }
+    public Date getDateOfReturn(){
+        return date_of_return;
+    }
+
     public  Client getClient(){ return  client;}
 
 }

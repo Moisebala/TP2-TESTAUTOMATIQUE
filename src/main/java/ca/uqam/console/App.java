@@ -84,7 +84,7 @@ public class App {
     }
 
     public static void afficherClient() {
-        Iterable<Client> customers = repository.findAll();
+        List<Client> customers = repository.findAll();
         System.out.println("Customers found:");
         System.out.println("-------------------------------");
         for (Client customer : customers){
@@ -197,7 +197,9 @@ public class App {
         System.out.println("Entrer le numero de votre permis SVP: ");
         sc.nextLine();
         String permisRetour = sc.nextLine();
+        // verifier si le client a deja louer une voiture ou pas
         Client clientConcerne = repository.findByPermisnumber(permisRetour);
+
         Locations locationConcerne = repository2.findByClient(clientConcerne);
         Vehicule voitureConcerne = repository1.findOne(locationConcerne.getIdVehicule());
         System.out.println("S'agit il de la " +voitureConcerne.toString() +" ? O ou N");
@@ -206,7 +208,6 @@ public class App {
             voitureConcerne.setState((Etatvoiture.Disponile));
             repository1.save(voitureConcerne);
             locationConcerne.setDateOfReturn(new Date());
-            repository2.save(locationConcerne);
             System.out.println("Merci pour votre confiance renouvellee");
             appChoice();
         }else {
@@ -242,6 +243,7 @@ public class App {
     }
     static Client rechercheClient(String permis){
         Client clientConcerne = repository.findByPermisnumber(permis);
+
         return clientConcerne;
     }
     static Vehicule rechercheVehicule(Long iden){
@@ -249,8 +251,5 @@ public class App {
         return voitureConcerne;
     }
 
-        static Locations rechercheLocation(Client client){Locations locationConcerne = repository2.findByClient(client);
-         return locationConcerne ;
-    }
 }
 

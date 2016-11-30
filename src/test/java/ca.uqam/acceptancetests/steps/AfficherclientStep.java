@@ -7,10 +7,7 @@ import org.jbehave.core.annotations.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import static ca.uqam.console.App.afficherClient;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -21,7 +18,8 @@ public class AfficherclientStep {
     ClientRepository clientRepository;
     Client paul =null;
     Client jean =null;
-    List<Client> clientList= null;
+    List<Client> clientList=null;
+
 
     @BeforeScenario
     public void setUp(){
@@ -34,24 +32,25 @@ public class AfficherclientStep {
         context.close();
     }
     @Given("\"Paul\" est un client enregistr\u00E9")
-    public void givenPaulEstUnClientEnregistré() {
-        //paul =new Client("MA0011","paul","Baeur","5140004545","11 uqam");
-       // clientList.add(paul);
+    public void givenPaulEstUnClientEnregistré(String permisnumber) {
+      this.paul=clientRepository.findByPermisnumber(permisnumber);
     }
     @Given("\"Jean\" est un client enregistr\u00E9")
-    public void givenJeanEstUnClientEnregistré() {
-        //jean =new Client("MA0010","Jean","Baeur","5140004545","11 uqam");
-       // clientList.add(jean);
+    public void givenJeanEstUnClientEnregistré(String permisnumber) {
+      this.jean=clientRepository.findByPermisnumber(permisnumber) ;
+
     }
     @When("j'affiche la liste des clients")
-    public void whenJafficheLaListeDesClients() {clientList =clientRepository.findAll();
+    public void whenJafficheLaListeDesClients() {
+        this.clientList =clientRepository.findAll();
+
     }
     @Then("\"Paul\" est dans la liste affich\u00E9e")
-    public void thenPaulEstDansLaListeAffichée() {assertEquals(true ,clientList.contains(paul));
+    public void thenPaulEstDansLaListeAffichée() {assertEquals(true ,this.clientList.contains(this.paul));
     }
     @Then("\"Jean\" est dans la liste affich\u00E9e")
     public void thenJeanEstDansLaListeAffichée() {
-        assertEquals(true,clientList.contains(jean));
+        assertEquals(true,this.clientList.contains(this.jean));
     }
 
 }

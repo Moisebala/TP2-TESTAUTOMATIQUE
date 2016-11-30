@@ -14,6 +14,8 @@ import java.util.List;
 public interface LocationsRepository extends CrudRepository<Locations , Long> {
 
     List<Locations> findAll();
-     Locations findByClient(Client client);
-    Vehicule findByIdVehicule(Long id);
+
+    Locations findByClient(Client client);
+
+    Locations findByVehicule(Vehicule voiture);
 }
