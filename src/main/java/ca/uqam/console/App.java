@@ -105,18 +105,15 @@ public class App {
         //changer l etat de la voiture
         voitures2 =changeretat(voitures2);
     }
-    static ArrayList<Locations>saveLocation(Client client , Vehicule voiture){
-        Locations location =repository2.save(new Locations(client,voiture));
-
-        return
-
+    static void saveLocation(Client client , Vehicule voiture){
+        Locations location =repository2.save(new Locations(client,voiture));;
     }
 
     static Vehicule changeretat(Vehicule voiture){
         if (voiture.getState()==Etatvoiture.Disponile){
             voiture.setState(Etatvoiture.Louer);
             repository1.save(voiture);
-        }else {voiture.setState(Etatvoiture.Disponile)
+        }else {voiture.setState(Etatvoiture.Disponile);
             repository1.save(voiture);;}
         return voiture;
     }
@@ -136,8 +133,8 @@ public class App {
         if (reponse.equals("O") || reponse.equals("o")){
             System.exit(0);}
         else{appChoice();}
-
     }
+
     static void retournerVoiture() {
         System.out.println("Entrer le numero de votre permis SVP: ");
         sc.nextLine();

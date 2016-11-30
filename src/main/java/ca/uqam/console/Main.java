@@ -58,34 +58,6 @@ public class Main {
                 break;
             case 3:
                 louerVoiture();
-                long choiceUser;
-                afficherVoituresDisponibles();
-                do{
-                    System.out.println("\n veuillez entrer votre choix : \n");
-                    choiceUser = sc.nextLong();
-                } while (!(choiceUser>0&&choiceUser<=repository1.count()));
-               Vehicule voitures2=App.rechercheVehicule(choiceUser);
-                System.out.println("\n vous avez choisi : " +voitures2);
-
-                System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
-                sc.nextLine();
-                String numeroPermis = sc.nextLine();
-                Client client =App.rechercheClient(numeroPermis);
-                Client nouveauClient=new Client();
-                if (client == null){
-                    ajouterClient(nouveauClient,numeroPermis);}
-
-
-                System.out.println("\n votre location a ete enregistree!! \n");
-                System.out.println("Souhaitez vous continuer? O ou N");
-                String reponse = sc.nextLine();
-                if(reponse.equals("O") || reponse.equals("o"))
-                    help();
-                else {
-                    System.out.println("Merci pour cette confiance renouvellee. Au plaisir de vous revoir!");
-                    System.exit(0);
-                }
-
 
                 appChoice();
                 break;
