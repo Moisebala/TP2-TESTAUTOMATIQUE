@@ -67,47 +67,23 @@ public class App {
         }
     }
 
-    //methode pour louer une voiture
-    static void louerVoiture(){
-        long choiceUser;
-        //afficherVoituresDisponibles();
-        //recuperer le choix de l'utilisateur
-        do{
-            System.out.println("\n veuillez entrer votre choix : \n");
-            choiceUser = sc.nextLong();
-        } while (!(choiceUser>0&&choiceUser<=repository1.count()));
-
-        Vehicule voitures2 = repository1.findOne(choiceUser);
-        System.out.println("\n vous avez choisi : " +voitures2);
-        //entrer le numero de permis de conduire
-        System.out.println("\n veuillez entrer votre numero de permis de conduire : \n");
-        sc.nextLine();
-        String numeroPermis = sc.nextLine();
-
-        Client client = repository.findByPermisnumber(numeroPermis);
-        System.out.println(numeroPermis);
-        //inscrire le client dans la base de donnees
-        String numeroClient ;
-        Client nouveauClient = new Client();
-        if (client == null){
-            ajouterClient(nouveauClient,numeroPermis);
-            System.out.println("identite du client = " +nouveauClient.getId());
-            System.out.println("identite de la voiture = " +voitures2.getId());
-            repository2.save(new Locations(nouveauClient, voitures2));
-
-    } else {
-
-            //creer une ligne dans la table location
-            System.out.println("identite du client = " +client.getId());
-            System.out.println("identite de la voiture = " +voitures2.getId());
-            repository2.save(new Locations(client, voitures2));
+    //methode verification de location
+    static Vehicule verifierlocation(String permis){
+        Client clientConcerne = rechercheClient(permis);
+        Locations locations =repository2.findByClient(clientConcerne);
+        Vehicule voitureConcerne = repository1.findOne(locations.getIdVehicule());
+        afficherlocation();
+       if (locations.getIdVehicule()==voitureConcerne.getIdVehicule()){
+            changeretat(voitureConcerne);
+            locations.setDateOfReturn(new Date());
+            repository2.delete(locations);
         }
-        //changer l etat de la voiture
-        voitures2 =changeretat(voitures2);
+        return  voitureConcerne;
     }
     static void saveLocation(Client client , Vehicule voiture){
         Locations location =repository2.save(new Locations(client,voiture));;
     }
+
 
     static Vehicule changeretat(Vehicule voiture){
         if (voiture.getState()==Etatvoiture.Disponile){
@@ -120,74 +96,23 @@ public class App {
     static void afficherlocation(){
         //verification des locations
         Iterable<Locations> locations = repository2.findAll();
-        System.out.println("Locations found:");
-        System.out.println("-------------------------------");
         for (Locations location : locations){
             System.out.println(location);
         }
     }
 
-    static void quitter () {
-        System.out.println("Etes vous sure de vouloir quitter ? O ou N");
-        String reponse = sc.next();
-        if (reponse.equals("O") || reponse.equals("o")){
-            System.exit(0);}
-        else{appChoice();}
-    }
-
     static void retournerVoiture() {
-        System.out.println("Entrer le numero de votre permis SVP: ");
-        sc.nextLine();
-        String permisRetour = sc.nextLine();
-        // verifier si le client a deja louer une voiture ou pas
-        Client clientConcerne = repository.findByPermisnumber(permisRetour);
 
-        Locations locationConcerne = repository2.findByClient(clientConcerne);
-        Vehicule voitureConcerne = repository1.findOne(locationConcerne.getIdVehicule());
-        System.out.println("S'agit il de la " +voitureConcerne.toString() +" ? O ou N");
-        String reponse = sc.nextLine();
-        if (reponse.equals("O") || reponse.equals("o")){
-            voitureConcerne.setState((Etatvoiture.Disponile));
-            repository1.save(voitureConcerne);
-            repository.save(clientConcerne);
-            locationConcerne.setDateOfReturn(new Date());
-            repository2.save(locationConcerne);
-            System.out.println("Merci pour votre confiance renouvellee");
-            appChoice();
-        }else {
-            System.out.println("Un probleme quelque part!! Verifier le numero de permis entre!");
-            retournerVoiture();
-        }
 
     }
-    static void ajouterClient(Client A ,String B){
-        String numeroClient;
-        System.out.println("\n IDENTIFICATION : \n");
-        System.out.println("Entrez votre prenom :\n");
-        String nomClient = sc.nextLine();
-
-        System.out.println("Entrez votre nom :\n");
-        String prenomClient = sc.nextLine();
-
-        do {
-            System.out.println("Entrez votre numero de telephone :\n");
-            //	sc.nextLine();
-            numeroClient = sc.nextLine();
-        } while (numeroClient.length() != 10);
-
-        System.out.println("Entrez votre addresse :\n");
-        String adresseClient = sc.nextLine();
-
-        A.setPermisnumber(B);
-        A.setFirstName(prenomClient);
-        A.setLastName(nomClient);
-        A.setPhone(numeroClient);
-        A.setAdresse(adresseClient);
+    static void saveClient(Client A){
         repository.save(A);
     }
     static Client rechercheClient(String permis){
         Client clientConcerne = repository.findByPermisnumber(permis);
-
+        if (clientConcerne==null){
+            appChoice();
+        }
         return clientConcerne;
     }
     static Vehicule rechercheVehicule(Long iden){

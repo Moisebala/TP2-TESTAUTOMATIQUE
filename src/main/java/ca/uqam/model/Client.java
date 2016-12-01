@@ -42,6 +42,10 @@ public class Client  {
 
     //getters et setters
     public String getPermisnumber(){ return permisnumber;}
+    public String getFirstName(){ return  firstName;}
+    public  String getLastName(){return  lastName;}
+    public String getPhone(){return  phone;}
+    public  String getAdresse(){return adresse;}
 
     public void setPermisnumber(String permit){  this.permisnumber = permit;}
 

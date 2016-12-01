@@ -28,9 +28,9 @@ public class Locations extends AbstractEntity {
     @JoinColumn(name = "IDVehicule")
     private Vehicule vehicule;
 
-    @Column(name = "IDClient", insertable = false, updatable = false)
+    @Column(name = "IDClient", insertable = false, updatable = false ,unique = true)
     private Long idClient;
-    @Column(name = "IDVehicule", insertable = false, updatable = false)
+    @Column(name = "IDVehicule", insertable = false, updatable = false, unique = true)
     private Long  idVehicule;
     @Temporal(TemporalType.DATE)
     @Column(name = "date_of_rent")
