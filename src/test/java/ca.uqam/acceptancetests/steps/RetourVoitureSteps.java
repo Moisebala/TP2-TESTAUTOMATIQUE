@@ -1,6 +1,7 @@
 package ca.uqam.acceptancetests.steps;
 
 import ca.uqam.config.Config;
+import ca.uqam.console.App;
 import ca.uqam.model.Client;
 import ca.uqam.model.Etatvoiture;
 import ca.uqam.model.Locations;
@@ -9,10 +10,7 @@ import ca.uqam.repositories.ClientRepository;
 import ca.uqam.repositories.LocationsRepository;
 import ca.uqam.repositories.VehiculeRepository;
 import net.thucydides.core.annotations.Pending;
-import org.jbehave.core.annotations.BeforeScenario;
-import org.jbehave.core.annotations.Given;
-import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
+import org.jbehave.core.annotations.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
@@ -25,41 +23,34 @@ import static org.junit.Assert.assertEquals;
  */
 public class RetourVoitureSteps {
     ConfigurableApplicationContext context;
-    VehiculeRepository vehiculeRepository;
-    ClientRepository  clientRepository;
     LocationsRepository locationsRepository;
+    ClientRepository clientRepository;
+    VehiculeRepository vehiculeRepository;
     Locations location =null;
-    Client client =null;
-    Vehicule vehicule =null;
 
     @BeforeScenario
     public void setUp(){
         context = SpringApplication.run(Config.class);
-        vehiculeRepository = context.getBean(VehiculeRepository.class);
-        clientRepository =context.getBean(ClientRepository.class);
         locationsRepository =context.getBean(LocationsRepository.class);
 
+
     }
-
-    @Given("Voiture \"A1\" est a l'etat louer")
-    public void givenVoitureA1EstALetatLouer(Vehicule A1) {
-        this.location=locationsRepository.findByVehicule(A1);
-    }
-
-    @Given("\"Paul\" est locataire de voiture \"A1\"")
-    public void givenPaulEstLocataireDeVoitureA1(Client paul) {
-        this.location=locationsRepository.findByClient(paul);
-    }
-
-    @When("J'entre le numero de permis de \"Paul\"")
-    public void whenJentreLeNumeroDePermisDePaul(String permis) {
-
+    @Given("Une voiture $A1 louee par un $client")
+    public void givenUneVoitureA1LoueeParUnclientavecidentifiant(Vehicule voiture ,Client client) {
+       this.location = new Locations(client,voiture);
 
     }
 
-    @Then("Voite \"A1\" est l'etat disponible")
-    public void thenVoiteA1EstLetatDisponible() {
-        assertEquals("Disponible",vehicule.getState());
+    @When("\"client\" retourne la voiture $A1 avec son $Permit")
+    public void whenclientRetourneLaVoitureA1AvecSonPermit(Vehicule voiture ,String permit) {
+     voiture =App.verifierlocation(permit);
+
     }
+
+    @Then("l'etat de la voiture $A1 est a Disponible")
+    public void thenLetatDeLaVoitureA1EstADisponible(Vehicule voiture) {
+       assertEquals(Etatvoiture.Disponile,voiture.getState());
+    }
+
 
 }

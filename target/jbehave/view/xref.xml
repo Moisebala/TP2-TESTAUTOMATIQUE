@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1480528984679</whenMade>
+  <whenMade>1480626791841</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -8,25 +8,23 @@
       <description></description>
       <narrative>In order to 
 As a user
-I want to display my existing customer
+I want to return a car
 </narrative>
-      <name>affichage_client.story</name>
-      <path>stories/affichage_client.story</path>
-      <html>stories.affichage_client.html</html>
+      <name>retour_voiture.story</name>
+      <path>stories/retour_voiture.story</path>
+      <html>stories.retour_voiture.html</html>
       <meta></meta>
-      <scenarios>Scenario:Je veux afficher les clients existant
-Given &quot;Paul&quot; est un client enregistré
-And &quot;Jean&quot; est un client enregistré
-When j&apos;affiche la liste des clients
-Then &quot;Paul&quot; est dans la liste affichée
-And &quot;Jean&quot; est dans la liste affichée
+      <scenarios>Scenario:Retour de voiture
+Given Une voiture &quot;A1&quot; louee par un &quot;client&quot;
+When &quot;client&quot; retourne la voiture &quot;A1&quot; avec son $Permit
+Then l&apos;etat de la voiture &quot;A1&quot; est a Disponible
 
 
 </scenarios>
       <passed>true</passed>
       <pending>true</pending>
-      <started>1480528972598</started>
-      <duration>8478</duration>
+      <started>1480626775738</started>
+      <duration>12697</duration>
     </story>
   </stories>
   <stepMatches/>

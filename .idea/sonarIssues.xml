@@ -63,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/Client.java">
           <value>
             <set />
@@ -179,6 +184,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/resources/stories/Retour_Voiture.story">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/resources/stories/Trouver_Voiture.story">
           <value>
             <set />
           </value>

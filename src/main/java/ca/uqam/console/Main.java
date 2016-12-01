@@ -26,7 +26,6 @@ import static ca.uqam.console.App.*;
 public class Main {
 
     static AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-    static ArrayList<Vehicule> listeVoituresDisponibles = new ArrayList<Vehicule>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -96,11 +95,10 @@ public class Main {
                 appChoice();
                 break;
             case 5:
-                //retournerVoiture();
                 System.out.println("Entrer le numero de votre permis SVP: ");
                 sc.nextLine();
                 String permisRetour = sc.nextLine();
-                Vehicule voiture =App.verifierlocation(permisRetour);
+                 Vehicule voiture =App.verifierlocation(permisRetour);
                 System.out.println("la " +voiture.toString() +"a ete retourné");
                 System.out.println("Merci pour votre confiance renouvellee");
                 help();

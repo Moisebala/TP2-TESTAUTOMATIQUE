@@ -6,10 +6,9 @@ I want to return a car
 So that I can change the car status to available
 
 Scenario: Retour de voiture
-Given Voiture "A1" est a l'etat louer
-Given "Paul" est locataire de voiture "A1"
-When J'entre le numero de permis de "Paul"
-Then Voite "A1" est l'etat disponible
+Given Une voiture "A1" louee par un "client"
+When "client" retourne la voiture "A1" avec son $Permit
+Then l'etat de la voiture "A1" est a Disponible
 
 
 
