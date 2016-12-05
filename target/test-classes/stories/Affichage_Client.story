@@ -2,14 +2,14 @@ Meta:
 
 Narrative:
 As a user
-I want to display my existing customer
-So that I can see all my customer display
+I want to display an existing customer
+So that I can see  the customer display
 
-Scenario: Je veux afficher les clients existant
-Given "Paul" est un client enregistré
-And "Jean" est un client enregistré
-When j'affiche la liste des clients
-Then "Paul" est dans la liste affichée
-And "Jean" est dans la liste affichée
-
+Scenario: Je veux chercher un client existant
+Given Le client existe dans la base : AM002300
+When Je cherche le client
+Then je devrais avoir les detailles de client: <Nom> <Prenom> <Numerotel> <Adresse>
+Examples:
+          | Nom     | Prenom  | Numerotel  | Adresse               |
+          | Armelle | Tenekeu | 5147718969 | 1345 rue saint charles|
 

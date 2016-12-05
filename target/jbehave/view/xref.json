@@ -1,9 +1,22 @@
 {"xref": {
-  "whenMade": 1480626791841,
+  "whenMade": 1480902766842,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
   "stories": [
+    {
+      "description": "",
+      "narrative": "In order to \nAs a user\nI want to display an existing customer\n",
+      "name": "affichage_client.story",
+      "path": "stories/affichage_client.story",
+      "html": "stories.affichage_client.html",
+      "meta": "",
+      "scenarios": "Scenario:Je veux chercher un client existant\nGiven Le client existe dans la base : AM002300\nWhen Je cherche le client\nThen je devrais avoir les detailles de client: <Nom> <Prenom> <Numerotel> <Adresse>\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1480902744756,
+      "duration": 17459
+    },
     {
       "description": "",
       "narrative": "In order to \nAs a user\nI want to return a car\n",
@@ -11,11 +24,11 @@
       "path": "stories/retour_voiture.story",
       "html": "stories.retour_voiture.html",
       "meta": "",
-      "scenarios": "Scenario:Retour de voiture\nGiven Une voiture \"A1\" louee par un \"client\"\nWhen \"client\" retourne la voiture \"A1\" avec son $Permit\nThen l'etat de la voiture \"A1\" est a Disponible\n\n\n",
-      "passed": true,
-      "pending": true,
-      "started": 1480626775738,
-      "duration": 12697
+      "scenarios": "Scenario:Retour de voiture\nGiven La Voiture 20162011 est a l'etat louer\nWhen Je retourne la voiture 20162011\nThen La voiture devrais avoir l'etat : Disponible\n\n\n",
+      "passed": false,
+      "pending": false,
+      "started": 1480902764651,
+      "duration": 1453
     }
   ],
   "stepMatches": []

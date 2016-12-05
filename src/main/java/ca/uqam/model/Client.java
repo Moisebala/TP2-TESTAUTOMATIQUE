@@ -3,6 +3,8 @@ package ca.uqam.model;
 import org.dom4j.tree.AbstractEntity;
 
 import javax.persistence.*;
+import java.util.List;
+
 /**
  * Created by Mo-is-Balla on 2016-11-14.
  */
@@ -47,6 +49,7 @@ public class Client  {
     public String getPhone(){return  phone;}
     public  String getAdresse(){return adresse;}
 
+
     public void setPermisnumber(String permit){  this.permisnumber = permit;}
 
     public Long getId(){ return  id;}
@@ -68,4 +71,6 @@ public class Client  {
     }
 
 
-}
+    }
+
+

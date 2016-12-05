@@ -43,12 +43,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/rental.mv.db">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/sonar-project.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
           <value>
             <set />
           </value>
@@ -73,6 +88,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/ClientList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/Etatvoiture.java">
           <value>
             <set />
@@ -83,12 +103,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/LocationsList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/Vehicule.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/VehiculeList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/model/VehiculeListe.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/ClientListRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/ClientRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/LocationListRepository.java">
           <value>
             <set />
           </value>
@@ -99,6 +144,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/Repository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/ca/uqam/repositories/VehiculeListRepository.java">
           <value>
             <set />
           </value>
@@ -219,6 +269,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../gestionnaire-cours 2/src/main/java/ca/uqam/model/ValidatedCourse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../gestionnaire-cours 2/src/test/java/ca/uqam/acceptancetests/steps/CourseDetailsSteps.java">
           <value>
             <set />
           </value>

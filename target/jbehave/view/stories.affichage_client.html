@@ -11,16 +11,32 @@
 <div class="path">stories/affichage_client.story</div>
 <div class="narrative"><h2>Narrative:</h2>
 <div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
-<div class="element asA"><span class="keyword asA">I want to</span> display my existing customer</div>
-<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can see all my customer display</div>
+<div class="element asA"><span class="keyword asA">I want to</span> display an existing customer</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can see  the customer display</div>
 </div>
 <div class="scenario">
-<h2>Scenario: Je veux afficher les clients existant</h2>
-<div class="step pending">Given &quot;Paul&quot; est un client enregistr&eacute; <span class="keyword pending">(PENDING)</span></div>
-<div class="step notPerformed">And &quot;Jean&quot; est un client enregistr&eacute; <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">When j'affiche la liste des clients <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then &quot;Paul&quot; est dans la liste affich&eacute;e <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">And &quot;Jean&quot; est dans la liste affich&eacute;e <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<h2>Scenario: Je veux chercher un client existant</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Le client existe dans la base : AM002300</div>
+<div class="step">When Je cherche le client</div>
+<div class="step">Then je devrais avoir les detailles de client: &lt;Nom&gt; &lt;Prenom&gt; &lt;Numerotel&gt; &lt;Adresse&gt;</div>
+<table>
+<thead>
+<tr>
+<th>Nom</th><th>Prenom</th><th>Numerotel</th><th>Adresse</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Armelle</td><td>Tenekeu</td><td>5147718969</td><td>1345 rue saint charles</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {Nom=Armelle, Prenom=Tenekeu, Numerotel=5147718969, Adresse=1345 rue saint charles}</h3>
+<div class="step successful">Given Le client existe dans la base : <span class="step parameter">AM002300</span></div>
+<div class="step successful">When Je cherche le client</div>
+<div class="step successful">Then je devrais avoir les detailles de client: <span class="step parameter">Armelle</span> <span class="step parameter">Tenekeu</span> <span class="step parameter">5147718969</span> <span class="step parameter">1345 rue saint charles</span></div>
+</div>
 </div>
 </div>
 

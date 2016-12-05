@@ -48,10 +48,9 @@ public class Locations extends AbstractEntity {
         this.date_of_rent = new Date();
         this.client = client;
         this.vehicule = vehicule;
-        this.date_of_return = new Date(2010-10-10);
+        this.date_of_return = new Date();
 
     }
-
     @Override
     public String toString() {
         return String.format("Location[IdClient='%d', IdVehicule= '%d', DateOfRent='%s', DateOfReturn='%s',]",idClient , idVehicule, date_of_rent, date_of_return);
@@ -61,8 +60,7 @@ public class Locations extends AbstractEntity {
     }
 
     public Long getIdVehicule() {
-        return idVehicule
-                ;
+        return idVehicule;
     }
 
     public void setDateOfReturn(Date date) {

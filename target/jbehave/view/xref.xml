@@ -1,9 +1,31 @@
 <xref>
-  <whenMade>1480626791841</whenMade>
+  <whenMade>1480902766842</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
   <stories>
+    <story>
+      <description></description>
+      <narrative>In order to 
+As a user
+I want to display an existing customer
+</narrative>
+      <name>affichage_client.story</name>
+      <path>stories/affichage_client.story</path>
+      <html>stories.affichage_client.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Je veux chercher un client existant
+Given Le client existe dans la base : AM002300
+When Je cherche le client
+Then je devrais avoir les detailles de client: &lt;Nom&gt; &lt;Prenom&gt; &lt;Numerotel&gt; &lt;Adresse&gt;
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1480902744756</started>
+      <duration>17459</duration>
+    </story>
     <story>
       <description></description>
       <narrative>In order to 
@@ -15,16 +37,16 @@ I want to return a car
       <html>stories.retour_voiture.html</html>
       <meta></meta>
       <scenarios>Scenario:Retour de voiture
-Given Une voiture &quot;A1&quot; louee par un &quot;client&quot;
-When &quot;client&quot; retourne la voiture &quot;A1&quot; avec son $Permit
-Then l&apos;etat de la voiture &quot;A1&quot; est a Disponible
+Given La Voiture 20162011 est a l&apos;etat louer
+When Je retourne la voiture 20162011
+Then La voiture devrais avoir l&apos;etat : Disponible
 
 
 </scenarios>
-      <passed>true</passed>
-      <pending>true</pending>
-      <started>1480626775738</started>
-      <duration>12697</duration>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1480902764651</started>
+      <duration>1453</duration>
     </story>
   </stories>
   <stepMatches/>

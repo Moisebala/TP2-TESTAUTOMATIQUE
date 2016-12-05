@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>stories.Retour_Voiture</title>
+<title>stories.retour_voiture</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
@@ -16,9 +16,19 @@
 </div>
 <div class="scenario">
 <h2>Scenario: Retour de voiture</h2>
-<div class="step pending">Given Une voiture &quot;A1&quot; louee par un &quot;client&quot; <span class="keyword pending">(PENDING)</span></div>
-<div class="step notPerformed">When &quot;client&quot; retourne la voiture &quot;A1&quot; avec son $Permit <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then l'etat de la voiture &quot;A1&quot; est a Disponible <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step successful">Given La Voiture <span class="step parameter">20162011</span> est a l'etat louer</div>
+<div class="step successful">When Je retourne la voiture <span class="step parameter">20162011</span></div>
+<div class="step failed">Then La voiture devrais avoir l'etat : <span class="step parameter">Disponible</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected:&lt;Disponible&gt; but was:&lt;Disponile&gt;</span></div>
+<pre class="failure">java.lang.AssertionError: expected:&lt;Disponible&gt; but was:&lt;Disponile&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at ca.uqam.acceptancetests.steps.RetourVoitureSteps.thenLaVoitureDevraisAvoirLetatDisponible(RetourVoitureSteps.java:47)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
+...</pre>
 </div>
 </div>
 

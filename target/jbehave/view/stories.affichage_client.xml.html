@@ -11,15 +11,24 @@
 <story path="stories/affichage_client.story" title="">
 <narrative keyword="Narrative:">
   <inOrderTo keyword="As a">user</inOrderTo>
-  <asA keyword="I want to">display my existing customer</asA>
-  <iWantTo keyword="So that">I can see all my customer display</iWantTo>
+  <asA keyword="I want to">display an existing customer</asA>
+  <iWantTo keyword="So that">I can see  the customer display</iWantTo>
 </narrative>
-<scenario keyword="Scenario:" title="Je veux afficher les clients existant">
-<step outcome="pending" keyword="PENDING">Given &quot;Paul&quot; est un client enregistr&#233;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And &quot;Jean&quot; est un client enregistr&#233;</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">When j&apos;affiche la liste des clients</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then &quot;Paul&quot; est dans la liste affich&#233;e</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And &quot;Jean&quot; est dans la liste affich&#233;e</step>
+<scenario keyword="Scenario:" title="Je veux chercher un client existant">
+<examples keyword="Examples:">
+<step>Given Le client existe dans la base : AM002300</step>
+<step>When Je cherche le client</step>
+<step>Then je devrais avoir les detailles de client: &lt;Nom&gt; &lt;Prenom&gt; &lt;Numerotel&gt; &lt;Adresse&gt;</step>
+<parameters>
+<names><name>Nom</name><name>Prenom</name><name>Numerotel</name><name>Adresse</name></names>
+<values><value>Armelle</value><value>Tenekeu</value><value>5147718969</value><value>1345 rue saint charles</value></values>
+</parameters>
+
+<example keyword="Example:">{Nom=Armelle, Prenom=Tenekeu, Numerotel=5147718969, Adresse=1345 rue saint charles}</example>
+<step outcome="successful">Given Le client existe dans la base : <parameter>AM002300</parameter></step>
+<step outcome="successful">When Je cherche le client</step>
+<step outcome="successful">Then je devrais avoir les detailles de client: <parameter>Armelle</parameter> <parameter>Tenekeu</parameter> <parameter>5147718969</parameter> <parameter>1345 rue saint charles</parameter></step>
+</examples>
 </scenario>
 </story>
 
