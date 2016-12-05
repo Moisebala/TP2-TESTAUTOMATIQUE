@@ -26,7 +26,7 @@ public class Main {
         ClientRepository clientRepository=context.getBean(ClientRepository.class);
         VehiculeListRepository vehiculeListRepository=context.getBean(VehiculeListRepository.class);
         LocationsRepository locationsRepository=context.getBean(LocationsRepository.class);
-        App.initialisationBase1();
+        //App.initialisationBase1();
 
          //System.out.println("\nVeuillez saisir votre numero de permis de conduire :");
         //String numeroPermis = sc.nextLine();
