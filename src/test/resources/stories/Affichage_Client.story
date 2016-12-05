@@ -7,7 +7,7 @@ So that I can see  the customer display
 
 Scenario: Je veux chercher un client existant
 Given Le client existe dans la base : AM002300
-When Je cherche le client
+When Je cherche le client AM002300
 Then je devrais avoir les detailles de client: <Nom> <Prenom> <Numerotel> <Adresse>
 Examples:
           | Nom     | Prenom  | Numerotel  | Adresse               |
