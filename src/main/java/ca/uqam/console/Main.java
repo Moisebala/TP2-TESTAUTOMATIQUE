@@ -28,10 +28,10 @@ public class Main {
         LocationsRepository locationsRepository=context.getBean(LocationsRepository.class);
         App.initialisationBase1();
 
-         System.out.println("\nVeuillez saisir votre numero de permis de conduire :");
-        String numeroPermis = sc.nextLine();
-        Vehicule vehicule =App.Retourlocation(numeroPermis);
-        App.Locations1();
+         //System.out.println("\nVeuillez saisir votre numero de permis de conduire :");
+        //String numeroPermis = sc.nextLine();
+        //Vehicule vehicule =App.Retourlocation(numeroPermis);
+        //App.Locations1();
 
    
         try {

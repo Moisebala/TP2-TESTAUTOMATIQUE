@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1480922487996</whenMade>
+  <whenMade>1480923450464</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -8,13 +8,49 @@
       <description></description>
       <narrative>In order to 
 As a user
-I want to perform an action
+I want to display an existing customer
 </narrative>
-      <name>afficher_voiture.story</name>
-      <path>stories/afficher_voiture.story</path>
-      <html>stories.afficher_voiture.html</html>
+      <name>affichage_client.story</name>
+      <path>stories/affichage_client.story</path>
+      <html>stories.affichage_client.html</html>
       <meta></meta>
-      <scenarios>Scenario:scenario description
+      <scenarios>Scenario:Je veux chercher un client existant
+Given Le client existe dans la base : AM002300
+When Je cherche le client
+Then je devrais avoir les detailles de client: &lt;Nom&gt; &lt;Prenom&gt; &lt;Numerotel&gt; &lt;Adresse&gt;
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1480923434876</started>
+      <duration>9127</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative>In order to 
+As a user
+I want to rent and return a car
+</narrative>
+      <name>location_voiture.story</name>
+      <path>stories/location_voiture.story</path>
+      <html>stories.location_voiture.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Louer une voiture
+Given Un client enregistre avec un permis : AM002310
+Given Une voiture enregistre avec le matricule : 20162004
+When Le client AM002310  loue la voiture 20162004
+Then L&apos;etat de la voiture 20162004 devrais etre : Louer
+
+
+Scenario:Retour de voiture
+Given Un client enregistre avec un permis : AM002310
+Given Une voiture enregistre avec le matricule : 20162004
+When Le client AM002310 retourne la voiture 20162004
+Then La voiture 20162004 devrais avoir l&apos;etat : Disponible
+
+
+Scenario:Afficher client
 Given Une voiture enregistre avec le matricule : 20162004
 When Je cherche la voiture
 Then Je devrais avoir les detailles de la voiture : &lt;Matricule&gt; &lt;Marque&gt; &lt;Model&gt; &lt;Type&gt; &lt;Year&gt; &lt;Price&gt; &lt;Etat&gt;
@@ -23,8 +59,8 @@ Then Je devrais avoir les detailles de la voiture : &lt;Matricule&gt; &lt;Marque
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1480922473659</started>
-      <duration>11121</duration>
+      <started>1480923446384</started>
+      <duration>3354</duration>
     </story>
   </stories>
   <stepMatches/>

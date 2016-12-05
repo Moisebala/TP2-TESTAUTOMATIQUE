@@ -1,21 +1,34 @@
 {"xref": {
-  "whenMade": 1480922487996,
+  "whenMade": 1480923450464,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
   "stories": [
     {
       "description": "",
-      "narrative": "In order to \nAs a user\nI want to perform an action\n",
-      "name": "afficher_voiture.story",
-      "path": "stories/afficher_voiture.story",
-      "html": "stories.afficher_voiture.html",
+      "narrative": "In order to \nAs a user\nI want to display an existing customer\n",
+      "name": "affichage_client.story",
+      "path": "stories/affichage_client.story",
+      "html": "stories.affichage_client.html",
       "meta": "",
-      "scenarios": "Scenario:scenario description\nGiven Une voiture enregistre avec le matricule : 20162004\nWhen Je cherche la voiture\nThen Je devrais avoir les detailles de la voiture : <Matricule> <Marque> <Model> <Type> <Year> <Price> <Etat>\n\n\n",
+      "scenarios": "Scenario:Je veux chercher un client existant\nGiven Le client existe dans la base : AM002300\nWhen Je cherche le client\nThen je devrais avoir les detailles de client: <Nom> <Prenom> <Numerotel> <Adresse>\n\n\n",
       "passed": true,
       "pending": false,
-      "started": 1480922473659,
-      "duration": 11121
+      "started": 1480923434876,
+      "duration": 9127
+    },
+    {
+      "description": "",
+      "narrative": "In order to \nAs a user\nI want to rent and return a car\n",
+      "name": "location_voiture.story",
+      "path": "stories/location_voiture.story",
+      "html": "stories.location_voiture.html",
+      "meta": "",
+      "scenarios": "Scenario:Louer une voiture\nGiven Un client enregistre avec un permis : AM002310\nGiven Une voiture enregistre avec le matricule : 20162004\nWhen Le client AM002310  loue la voiture 20162004\nThen L'etat de la voiture 20162004 devrais etre : Louer\n\n\nScenario:Retour de voiture\nGiven Un client enregistre avec un permis : AM002310\nGiven Une voiture enregistre avec le matricule : 20162004\nWhen Le client AM002310 retourne la voiture 20162004\nThen La voiture 20162004 devrais avoir l'etat : Disponible\n\n\nScenario:Afficher client\nGiven Une voiture enregistre avec le matricule : 20162004\nWhen Je cherche la voiture\nThen Je devrais avoir les detailles de la voiture : <Matricule> <Marque> <Model> <Type> <Year> <Price> <Etat>\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1480923446384,
+      "duration": 3354
     }
   ],
   "stepMatches": []

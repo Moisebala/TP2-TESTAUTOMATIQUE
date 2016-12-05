@@ -70,7 +70,7 @@ public class App {
         vehiculeDispo.addVehicule(new Vehicule("78959601","Toyota","Camry","Sedan","2016","120",Disponible));
         vehiculeDispo.addVehicule(new Vehicule("20162004","Honda","Accord","SEDAN","2016","120", Disponible));
          vehiculeDispo.addVehicule(new Vehicule("20162011","gip","Accord","SEDAN","2016","120", Disponible));
-        vehiculeListRepository.save(vehiculeDispo);
+         vehiculeListRepository.save(vehiculeDispo);
 
         clientrepository.save(new Client("AM002300","Armelle","Tenekeu","5147718969","1345 rue saint charles"));
         clientrepository.save(new Client("AM002310","Mama","Kouboura","5146740886","1345 chemin de Chambly"));

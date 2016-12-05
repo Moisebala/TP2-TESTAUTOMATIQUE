@@ -57,6 +57,11 @@ public class LocationVoitureSteps {
         String v = this.client.getPermisnumber()+","+this.vehicule.getMatricule();
         this.vehicule=App.Retourlocation(v);
     }
+    @When("Je cherche la voiture")
+    public void whenJeChercheLaVoiture() {
+        assertEquals(this.vehicule.equals(null),false);
+    }
+
     @Then("L'etat de la voiture 20162004 devrais etre : $Louer")
     public void thenLetatDeLaVoiture20162004DevraisEtreLouer(Etatvoiture Etat) {
         assertEquals(Etat,this.vehicule.getState());
@@ -65,6 +70,27 @@ public class LocationVoitureSteps {
     @Then("La voiture 20162004 devrais avoir l'etat : $Disponible")
     public void thenLaVoiture20162004DevraisAvoirLetatDisponible(Etatvoiture Etat) {
         assertEquals(Etat,this.vehicule.getState());
+    }
+
+    @Then("Je devrais avoir les detailles de la voiture : $Matricule $Marque  $Model  $Type> $Year  $Price $Etat")
+    public void thenJeDevraisAvoirLesDetaillesDeLaVoitureMatriculeMarqueModelTypeYearPriceEtat(String Matricule,
+                                                                                               String Marque,
+                                                                                               String Model,
+                                                                                               String Type,
+                                                                                               String Year,
+                                                                                               String Price,
+                                                                                               Etatvoiture Etat) {
+
+        assertEquals(Matricule,this.vehicule.getMatricule());
+        assertEquals(Marque ,this.vehicule.getMarque());
+        assertEquals(Model ,this.vehicule.getModel());
+        assertEquals(Type ,this.vehicule.getType());
+        assertEquals(Year ,this.vehicule.getYear());
+        assertEquals(Price,this.vehicule.getPrice());
+        assertEquals(Etat,this.vehicule.getState());
+
+
+
     }
 
 }

@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Mon Dec 05 02:21:24 EST 2016
+#Mon Dec 05 02:37:29 EST 2016
+stories/location_voiture.story=3000
 threads=1
-total=11000
-threadAverage=11000
-stories/afficher_voiture.story=11000
+total=3000
+threadAverage=3000

@@ -7,49 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="026dd743-a178-4862-8392-7f6ea60ec360" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoiture.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/rental.mv.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ca/uqam/acceptancetests/steps/RetourVoitureSteps.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/stories/Retour_Voiture.story" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/RetourVoiture.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/LocationVoiture.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/RetourVoitureSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/stories/Retour_Voiture.story" afterPath="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoiture.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.stats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.stats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.xml.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TP2-TESTAUTOMATIQUE-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/TP2-TESTAUTOMATIQUE-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/console/App.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/console/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/console/Main.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/console/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/model/Locations.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/model/Locations.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ca/uqam/model/Vehicule.class" afterPath="$PROJECT_DIR$/target/classes/ca/uqam/model/Vehicule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sonar/report-task.txt" afterPath="$PROJECT_DIR$/.sonar/report-task.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Etatvoiture.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Etatvoiture.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Locations.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Locations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Vehicule.java" afterPath="$PROJECT_DIR$/src/main/java/ca/uqam/model/Vehicule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java" afterPath="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story" afterPath="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-ca.uqam.acceptancetests.AffichageClient.xml" afterPath="$PROJECT_DIR$/target/failsafe-reports/TEST-ca.uqam.acceptancetests.AffichageClient.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/failsafe-reports/ca.uqam.acceptancetests.AffichageClient.txt" afterPath="$PROJECT_DIR$/target/failsafe-reports/ca.uqam.acceptancetests.AffichageClient.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterPath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.html" afterPath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.xml" afterPath="$PROJECT_DIR$/target/jbehave/stories.Retour_Voiture.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.affichage_client.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.affichage_client.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.Retour_Voiture.xml.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.affichage_client.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.affichage_client.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/xref.json" afterPath="$PROJECT_DIR$/target/jbehave/view/xref.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/xref.xml" afterPath="$PROJECT_DIR$/target/jbehave/view/xref.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="TP2-TESTAUTOMATIQUE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
@@ -109,8 +98,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="70" column="88" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="88" />
+            <state relative-caret-position="78">
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,21 +107,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AfficherVoiture.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoiture.java">
+      <file leaf-file-name="Location_Voiture.story" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="420">
+              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Afficher_Voiture.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story">
+      <file leaf-file-name="LocationVoitureSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="263">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationVoiture.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/LocationVoiture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -203,16 +204,16 @@
         <option value="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/uqam/model/Locations.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/uqam/model/Etatvoiture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story" />
         <option value="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoture.java" />
         <option value="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoiture.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/uqam/model/Vehicule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java" />
         <option value="$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story" />
+        <option value="$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story" />
         <option value="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java" />
       </list>
     </option>
   </component>
@@ -263,7 +264,6 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="727" />
@@ -346,33 +346,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,6 +375,74 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ca.uqam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ca.uqam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acceptancetests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP2-TESTAUTOMATIQUE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ca.uqam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acceptancetests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -413,6 +459,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,7 +550,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LocationVoiture">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1083,10 +1133,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AfficherVoiture" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AffichageTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LocationVoiture" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LocationVoiture" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AfficherVoiture" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AffichageTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.LocationVoiture" />
       </list>
     </recent_temporary>
@@ -1172,7 +1222,7 @@
       <workItem from="1480905074479" duration="5351000" />
       <workItem from="1480910644223" duration="308000" />
       <workItem from="1480912636803" duration="4668000" />
-      <workItem from="1480917664204" duration="4724000" />
+      <workItem from="1480917664204" duration="5673000" />
     </task>
     <task id="LOCAL-00001" summary="creation de projet">
       <created>1479097472410</created>
@@ -1391,19 +1441,17 @@
       <option name="project" value="LOCAL" />
       <updated>1480910390464</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="test d'Acceptance passes">
+      <created>1480922535405</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1480922535405</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AffichageTest - 2016.12.05 at 01h 46m 54s.xml">
-      <configuration name="AffichageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AfficherVoiture - 2016.12.05 at 02h 01m 54s.xml">
-      <configuration name="AfficherVoiture" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AfficherVoiture - 2016.12.05 at 02h 07m 35s.xml">
-      <configuration name="AfficherVoiture" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AfficherVoiture - 2016.12.05 at 02h 18m 15s.xml">
       <configuration name="AfficherVoiture" configurationId="JUnit" />
     </history-entry>
@@ -1413,21 +1461,30 @@
     <history-entry file="AfficherVoiture - 2016.12.05 at 02h 21m 28s.xml">
       <configuration name="AfficherVoiture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AfficherVoture - 2016.12.05 at 02h 00m 38s.xml">
-      <configuration name="AfficherVoture" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocationVoiture - 2016.12.05 at 01h 42m 30s.xml">
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 25m 56s.xml">
       <configuration name="LocationVoiture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocationVoiture - 2016.12.05 at 01h 43m 24s.xml">
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 26m 15s.xml">
       <configuration name="LocationVoiture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocationVoiture - 2016.12.05 at 01h 45m 14s.xml">
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 26m 42s.xml">
+      <configuration name="LocationVoiture" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 28m 23s.xml">
+      <configuration name="LocationVoiture" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 30m 34s.xml">
+      <configuration name="LocationVoiture" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 32m 29s.xml">
+      <configuration name="LocationVoiture" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocationVoiture - 2016.12.05 at 02h 36m 38s.xml">
       <configuration name="LocationVoiture" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279919000" />
+    <option name="totallyTimeSpent" value="280868000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1439,8 +1496,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1280" height="727" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="727" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1450,7 +1507,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66174054" sideWeight="0.50646204" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.6518884" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.56157637" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56157637" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77504104" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5632184" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1550,7 +1607,8 @@
     <MESSAGE value="option quitter" />
     <MESSAGE value="afficher voiturer louer et disponible" />
     <MESSAGE value="Code finale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code finale" />
+    <MESSAGE value="test d'Acceptance passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test d'Acceptance passes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1751,14 +1809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/LocationVoiture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/model/Etatvoiture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1775,39 +1825,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/unittests/AffichageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="47" column="5" selection-start-line="43" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1819,40 +1841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="70" column="88" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherclientStep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1862,6 +1854,68 @@
         <state relative-caret-position="105">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Afficher_Voiture.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/stories/Location_Voiture.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/LocationVoiture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/uqam/console/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
