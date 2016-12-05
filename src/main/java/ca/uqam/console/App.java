@@ -35,11 +35,10 @@ public class App {
         //Constructor par defaut
     }
 
-
     //-***************************** Methode pour menu2 en cours *********************************************************
     // sauvegarder une location
     public  static void saveLocation(Client client , Vehicule voiture){
-        Locations location =locationsRepository.save(new Locations(client,voiture));;
+        locationsRepository.save(new Locations(client,voiture));;
     }
    //rechercher un client
     public static Client rechercheClient1(String permis){
@@ -54,7 +53,7 @@ public class App {
         }
      // Afficher une location
     public static void  Locations1() {
-        ArrayList<Locations> list_locations = new ArrayList<Locations>();
+        ArrayList<Locations> list_locations;
         Iterable<Locations> locations = locationsRepository.findAll();
         for (Locations location : locations)
             System.out.println(location);
@@ -94,7 +93,7 @@ public class App {
     //Location d'une voiture
     public static Vehicule LocationVoiture(String infos) {
         String[] louees = infos.split(",");
-        Vehicule voiture1 = null;
+        Vehicule voiture1;
         Client clientConcerne = clientrepository.findByPermisnumber(louees[0]);
         VehiculeListe vehiculeListe =vehiculeListRepository.findByEtat(Disponible);
         voiture1 =vehiculeListe.getVehicules(louees[1]);

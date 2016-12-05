@@ -22,10 +22,7 @@ public class Main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-        ClientRepository clientRepository=context.getBean(ClientRepository.class);
-        VehiculeListRepository vehiculeListRepository=context.getBean(VehiculeListRepository.class);
-        LocationsRepository locationsRepository=context.getBean(LocationsRepository.class);
+        
         //App.initialisationBase1();
 
          //System.out.println("\nVeuillez saisir votre numero de permis de conduire :");

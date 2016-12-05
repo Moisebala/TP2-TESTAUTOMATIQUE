@@ -15,7 +15,7 @@ public class AffichageTest {
     Vehicule  vehicule , vehicule1;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception  {
         vehicule = new Vehicule("789593","Honda","C220","Sedan","2016","120", Etatvoiture.Disponible);
         vehicule1 = new Vehicule("789592","BmW","C220","Sedan","2016","120", Etatvoiture.Louer);
 

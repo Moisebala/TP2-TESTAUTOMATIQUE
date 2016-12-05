@@ -76,7 +76,7 @@ public class Vehicule {
     }
 
     public void setMatricule(String matricule) {
-        matricule = matricule;
+        this.matricule = matricule;
     }
 
     public Long getId() {
