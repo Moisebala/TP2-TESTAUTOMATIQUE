@@ -7,16 +7,6 @@
 <scenario keyword="Scenario:" title="Retour de voiture">
 <step outcome="successful">Given La Voiture <parameter>20162011</parameter> est a l&apos;etat louer</step>
 <step outcome="successful">When Je retourne la voiture <parameter>20162011</parameter></step>
-<step outcome="failed" keyword="FAILED">Then La voiture devrais avoir l&apos;etat : <parameter>Disponible</parameter><failure>java.lang.AssertionError: expected:&lt;Disponible&gt; but was:&lt;Disponile&gt;</failure></step>
-<failure>java.lang.AssertionError: expected:&lt;Disponible&gt; but was:&lt;Disponile&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at ca.uqam.acceptancetests.steps.RetourVoitureSteps.thenLaVoitureDevraisAvoirLetatDisponible(RetourVoitureSteps.java:47)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
-	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
-...</failure>
+<step outcome="successful">Then La voiture devrais avoir l&apos;etat : <parameter>Disponible</parameter></step>
 </scenario>
 </story>

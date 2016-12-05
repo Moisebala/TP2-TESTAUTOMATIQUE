@@ -1,5 +1,5 @@
 projectKey=my:TP2-TESTAUTOMATIQUE
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/my:TP2-TESTAUTOMATIQUE
-ceTaskId=AVijNPn9uV5S677jlF6y
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVijNPn9uV5S677jlF6y
+ceTaskId=AVjNKS2GAAQ3lG9oup_E
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVjNKS2GAAQ3lG9oup_E

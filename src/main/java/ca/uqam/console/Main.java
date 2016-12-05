@@ -12,18 +12,28 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Scanner;
+
 
 /**
  * Created by Mo-is-Balla on 2016-12-01.
  */
 public class Main {
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         ClientRepository clientRepository=context.getBean(ClientRepository.class);
         VehiculeListRepository vehiculeListRepository=context.getBean(VehiculeListRepository.class);
         LocationsRepository locationsRepository=context.getBean(LocationsRepository.class);
+        App.initialisationBase1();
 
+         System.out.println("\nVeuillez saisir votre numero de permis de conduire :");
+        String numeroPermis = sc.nextLine();
+        Vehicule vehicule =App.Retourlocation(numeroPermis);
+        App.Locations1();
+
+   
         try {
             CommandLine line = new DefaultParser().parse(optionsCreations(), args);
             if( line.hasOption( "voituredisponible" ) ){
@@ -57,7 +67,7 @@ public class Main {
         Options options = new Options();
 
         options.addOption("h", "help", false, "Affiche l'aide" );
-        options.addOption("v", "voituredisponible",false , "Affiche les voitures disponibles" );
+        options.addOption("v", "voituredisponible",true , "Rechercher voiture " );
         options.addOption("t", "client",true, "Rechercher un client existant" );
         options.addOption("r", "louerE", true, "Pour louer une voiture" );
         options.addOption("s", "ajouter", true, "Pour louer une voiture" );

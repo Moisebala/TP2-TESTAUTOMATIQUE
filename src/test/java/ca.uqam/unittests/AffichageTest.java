@@ -16,7 +16,7 @@ public class AffichageTest {
 
     @Before
     public void setUp() throws Exception {
-        vehicule = new Vehicule("789593","Honda","C220","Sedan","2016","120", Etatvoiture.Disponile);
+        vehicule = new Vehicule("789593","Honda","C220","Sedan","2016","120", Etatvoiture.Disponible);
         vehicule1 = new Vehicule("789592","BmW","C220","Sedan","2016","120", Etatvoiture.Louer);
 
 
@@ -26,7 +26,7 @@ public class AffichageTest {
     public void statevehiculedisponible() throws Exception {
         String matricule =vehicule.getMatricule();
         Etatvoiture status =vehicule.getState();
-        assertEquals(status,Etatvoiture.Disponile);
+        assertEquals(status,Etatvoiture.Disponible);
         assertEquals(matricule,"789593");
 
 

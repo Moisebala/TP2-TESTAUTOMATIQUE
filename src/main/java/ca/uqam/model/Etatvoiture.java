@@ -5,6 +5,6 @@ package ca.uqam.model;
  */
 public enum Etatvoiture {
 
-    Disponile,
+    Disponible,
     Louer
 }

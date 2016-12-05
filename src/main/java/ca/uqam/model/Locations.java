@@ -20,14 +20,13 @@ public class Locations extends AbstractEntity {
     private long idLocation;
 
     //location est lié à un client
-    @ManyToOne(fetch = FetchType.LAZY , targetEntity=Client.class)
+    @ManyToOne(fetch = FetchType.EAGER , targetEntity=Client.class)
     @JoinColumn(name = "IDClient")
     private Client client;
     //location est lié à un vehicule
-    @ManyToOne(fetch = FetchType.LAZY ,targetEntity=Vehicule.class)
+    @ManyToOne(fetch = FetchType.EAGER ,targetEntity=Vehicule.class)
     @JoinColumn(name = "IDVehicule")
     private Vehicule vehicule;
-
     @Column(name = "IDClient", insertable = false, updatable = false ,unique = true)
     private Long idClient;
     @Column(name = "IDVehicule", insertable = false, updatable = false, unique = true)

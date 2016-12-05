@@ -25,7 +25,7 @@ public class App {
     static ClientRepository clientrepository = context.getBean(ClientRepository.class);
     static LocationsRepository locationsRepository=context.getBean(LocationsRepository.class);
     static VehiculeListRepository vehiculeListRepository=context.getBean(VehiculeListRepository.class);
-    static Etatvoiture Disponible= Etatvoiture.Disponile;
+    static Etatvoiture Disponible= Etatvoiture.Disponible;
     static Etatvoiture Louer= Etatvoiture.Louer;
     static VehiculeListe vehiculeDispo = new VehiculeListe(Disponible);
 
@@ -70,7 +70,7 @@ public class App {
         vehiculeDispo.addVehicule(new Vehicule("78959601","Toyota","Camry","Sedan","2016","120",Disponible));
         vehiculeDispo.addVehicule(new Vehicule("20162004","Honda","Accord","SEDAN","2016","120", Disponible));
          vehiculeDispo.addVehicule(new Vehicule("20162011","gip","Accord","SEDAN","2016","120", Disponible));
-
+        vehiculeListRepository.save(vehiculeDispo);
 
         clientrepository.save(new Client("AM002300","Armelle","Tenekeu","5147718969","1345 rue saint charles"));
         clientrepository.save(new Client("AM002310","Mama","Kouboura","5146740886","1345 chemin de Chambly"));
@@ -80,8 +80,9 @@ public class App {
     //Retourner une voiture
     public static Vehicule Retourlocation(String infos){
         String[] retour = infos.split(",");
-        Client client =clientrepository.findByPermisnumber(retour[0]);
+
         VehiculeListe vehiculeListe =vehiculeListRepository.findByEtat(Disponible);
+        Client client =clientrepository.findByPermisnumber(retour[0]);
         Locations locations =locationsRepository.findByClient(client);
         Vehicule voiture =vehiculeListe.getVehicules(retour[1]);
         if (locations.getIdVehicule()==voiture.getIdVehicule()){
@@ -94,10 +95,10 @@ public class App {
     public static Vehicule LocationVoiture(String infos) {
         String[] louees = infos.split(",");
         Vehicule voiture1 = null;
+        Client clientConcerne = clientrepository.findByPermisnumber(louees[0]);
         VehiculeListe vehiculeListe =vehiculeListRepository.findByEtat(Disponible);
         voiture1 =vehiculeListe.getVehicules(louees[1]);
         voiture1.setState(Louer);
-        Client clientConcerne = clientrepository.findByPermisnumber(louees[0]);
         vehiculeListRepository.save(vehiculeListe);
         saveLocation(clientConcerne,voiture1);
         return voiture1;

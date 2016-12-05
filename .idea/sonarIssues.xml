@@ -168,6 +168,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/AfficherVoture.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/Affichervoiture.java">
           <value>
             <set />
@@ -183,6 +188,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherVoitureSteps.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/AfficherclientStep.java">
           <value>
             <set />
@@ -194,6 +204,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/ListeVoituresDisponibleSteps.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/ca.uqam/acceptancetests/steps/LocationVoitureSteps.java">
           <value>
             <set />
           </value>

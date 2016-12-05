@@ -59,6 +59,21 @@ public class Vehicule {
     public String getMatricule() {
         return matricule;
     }
+    public String getMarque() {
+        return Marque;
+    }
+    public String getModel() {
+        return Model;
+    }
+    public String getType() {
+        return Type;
+    }
+    public String getYear() {
+        return Year;
+    }
+    public String getPrice() {
+        return price;
+    }
 
     public void setMatricule(String matricule) {
         matricule = matricule;
