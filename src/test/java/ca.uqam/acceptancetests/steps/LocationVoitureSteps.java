@@ -57,7 +57,7 @@ public class LocationVoitureSteps {
         String v = this.client.getPermisnumber()+","+this.vehicule.getMatricule();
         this.vehicule=App.Retourlocation(v);
     }
-    @When("Je cherche la voiture")
+    @When("Je cherche la voiture 20162004")
     public void whenJeChercheLaVoiture() {
         assertEquals(this.vehicule.equals(null),false);
     }
