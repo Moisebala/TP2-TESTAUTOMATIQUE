@@ -22,7 +22,7 @@ Then La voiture 20162004 devrais avoir l'etat : Disponible
 
 Scenario: Afficher client
 Given Une voiture enregistre avec le matricule : 20162004
-When Je cherche la voiture
+When Je cherche la voiture 20162004
 Then Je devrais avoir les detailles de la voiture : <Matricule> <Marque> <Model> <Type> <Year> <Price> <Etat>
 Examples:
         Matricule |Marque  |Model   |Type   |Year  |Price  |Etat
