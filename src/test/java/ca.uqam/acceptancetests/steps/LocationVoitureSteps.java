@@ -35,44 +35,44 @@ public class LocationVoitureSteps {
         vehiculeListRepository=context.getBean(VehiculeListRepository.class);
         locationsRepository=context.getBean(LocationsRepository.class);
     }
-    @Given("Un client enregistre avec un permis : $permis")
+    @Given("Un client B enregistre avec un permis : $permis")
 
     public void givenUnClientEnregistreAvecUnPermisAM002310(String permis) {
         this.client=clientRepository.findByPermisnumber(permis);
     }
 
-    @Given("Une voiture enregistre avec le matricule : $matricule")
+    @Given("Une voiture A1 enregistre avec le matricule : $matricule")
     public void givenUneVoitureEnregistreAvecLeMatricule20162004(String matricule) {
        this.liste=vehiculeListRepository.findByEtat(Disponible);
         this.vehicule=liste.getVehicules(matricule);
     }
 
-    @When("Le client AM002310  loue la voiture 20162004")
+    @When("Le client B  loue la voiture A1")
     public void whenLeClientAM002310LoueLaVoiture20162004() {
         String v = this.client.getPermisnumber()+","+this.vehicule.getMatricule();
         this.vehicule=App.LocationVoiture(v);
     }
-    @When("Le client AM002310 retourne la voiture 20162004")
+    @When("Le client B retourne la voiture A1")
     public void whenLeClientAM002310RetourneLaVoiture20162004() {
         String v = this.client.getPermisnumber()+","+this.vehicule.getMatricule();
         this.vehicule=App.Retourlocation(v);
     }
-    @When("Je cherche la voiture 20162004")
+    @When("Je cherche la voiture A1")
     public void whenJeChercheLaVoiture() {
         assertEquals(this.vehicule.equals(null),false);
     }
 
-    @Then("L'etat de la voiture 20162004 devrais etre : $Louer")
+    @Then("L'etat de la voiture A1 devrais etre : $Louer")
     public void thenLetatDeLaVoiture20162004DevraisEtreLouer(Etatvoiture Etat) {
         assertEquals(Etat,this.vehicule.getState());
     }
 
-    @Then("La voiture 20162004 devrais avoir l'etat : $Disponible")
+    @Then("La voiture A1 devrais avoir l'etat : $Disponible")
     public void thenLaVoiture20162004DevraisAvoirLetatDisponible(Etatvoiture Etat) {
         assertEquals(Etat,this.vehicule.getState());
     }
 
-    @Then("Je devrais avoir les detailles de la voiture : $Matricule $Marque  $Model  $Type> $Year  $Price $Etat")
+    @Then("Je devrais avoir les detailles de la voiture A1 : $Matricule $Marque  $Model  $Type> $Year  $Price $Etat")
     public void thenJeDevraisAvoirLesDetaillesDeLaVoitureMatriculeMarqueModelTypeYearPriceEtat(String Matricule,
                                                                                                String Marque,
                                                                                                String Model,

@@ -31,17 +31,17 @@ public class AfficherclientStep {
         context.close();
     }
 
-    @Given("Le client existe dans la base : $permis")
-    public void givenLeclientExisteDansLaBase(String permis) {
+    @Given("On a une base de recherche de client avec un permis P1")
+    public void givenLeclientExisteDansLaBase() {
+
+    }
+
+    @When("Je cherche le client A1 avec sont permis : $P1")
+    public void whenJeChercherLeclientAvecSontPermisAM002300(String permis) {
         this.client= App.rechercheClient1(permis);
     }
 
-    @When("Je cherche le client AM002300")
-    public void whenJeChercherLeclientAvecSontPermisAM002300() {
-        assertEquals(this.client.equals(null),false);
-    }
-
-    @Then("je devrais avoir les detailles de client: $Nom $Prenom $Numerotel $Adresse")
+    @Then("je devrais avoir les detailles de client A1: $Nom $Prenom $Numerotel $Adresse")
     public void thenJeDevraisAvoirLesDetaillesDeclient(String Nom,
                                                        String Prenom,
                                                        String Numerotel,
