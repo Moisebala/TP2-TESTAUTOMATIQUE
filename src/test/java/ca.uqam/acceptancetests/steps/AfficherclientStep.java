@@ -36,7 +36,7 @@ public class AfficherclientStep {
         this.client= App.rechercheClient1(permis);
     }
 
-    @When("Je cherche le client")
+    @When("Je cherche le client AM002300")
     public void whenJeChercherLeclientAvecSontPermisAM002300() {
         assertEquals(this.client.equals(null),false);
     }
