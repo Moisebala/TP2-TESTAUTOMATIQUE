@@ -81,7 +81,6 @@ public class Main {
         System.out.println(
                 " - h : Affiche l'aide \n " +
                         "- v : Affiche les voitures disponibles \n " +
-                        "- c : Affiche les voitures louees \n " +
                         "- t : Rechercher un client existant \n " +
                         "- r : Pour louer une voiture existant \n " +
                         "- s : Pour louer une voiture client non existant \n " +

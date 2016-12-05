@@ -2,12 +2,8 @@
 
 Pour le cours MGL7460, automne 2016.
 
-LocationsList lst = new LocationsList();
-        lst.addvehiculelist(new Vehicule("78959111","Toyota","Camry","Sedan","2016","120",Etatvoiture.Disponile));
-        lst.addvehiculelist(new Vehicule("20162222","Honda","Accord","SEDAN","2016","120", Etatvoiture.Disponile));
-        lst.addvehiculelist(new Vehicule("20162010","gip","Accord","SEDAN","2016","120", Etatvoiture.Disponile));
+Pour executer le programme c'est il faut etre dans le dossier TP2_TESTAUTOMATIQUE_jar puis faire: 
 
-        lst.addvehiculelist(new Vehicule("78959333","Toyota","Camry","Sedan","2016","120",Etatvoiture.Louer));
-        lst.addvehiculelist(new Vehicule("20162444","Honda","Accord","SEDAN","2016","120", Etatvoiture.Louer));
-        lst.addvehiculelist(new Vehicule("20162555","gip","Accord","SEDAN","2016","120", Etatvoiture.Louer));
-        LocationsList s =locationListRepository.save(lst);
+ $ java -jar TP2_TESTAUTOMATIQUE.jar -h pour voir les options disponible 
+ 
+ PS : A part le help tout les autres options prennent un parametre .
